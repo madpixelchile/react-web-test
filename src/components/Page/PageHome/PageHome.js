@@ -1,22 +1,32 @@
 
 
-import React from 'react';
+import React, {Component} from 'react';
 
 import {ButtonComponent} from './../../Button/Button';
 
-export const PageHomeComponent = ()=>{
+import SimpleSlider from './../../Slider/mainSlider';
 
-    return(
+import './../../Slider/sliderHome.scss';
 
-        <div className="mainContent">
+export class PageHomeComponent extends Component{
 
-            pagina
+    render(){
+        return(
 
-            <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} />
+            
+            <div className="mainContent">
 
-        
-        </div>
-
-    );    
+                <SimpleSlider />
+                
+    
+                pagina
+    
+                <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} />
+    
+            
+            </div>
+    
+        ); 
+    }   
 
 }

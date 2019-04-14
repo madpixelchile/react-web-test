@@ -1,17 +1,33 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 
-export const ButtonComponent = ({buttonText, buttonAction})=>{
+// const ButtonComponentProps = {
+//     buttonText,
+//     buttonAction
+// }
 
-    if(buttonAction === 'modal')
-        console.log('modal');
-    else
-        console.log('otra wea');
+export class ButtonComponent extends Component{
 
-    return(
+    constructor(props){
+        super(props);
 
-        <button>{buttonText}</button>
+        // if(buttonAction === 'modal')
+        //     console.log('modal');
+        // else
+        //     console.log('otra wea');
+        
+        this.state = {
+            buttonTextOne: this.buttonText,
+        }
+    }
 
-    );    
+    render(){
+        
+        return(
+            
+            <button>{this.buttonTextOne}</button>
+    
+        ); 
+    }   
 
 }
