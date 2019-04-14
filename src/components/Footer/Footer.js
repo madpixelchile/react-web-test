@@ -1,11 +1,13 @@
 
 import React from 'react';
 
-export const FooterComponent = ()=>{
+import './footerStyles.scss';
+
+export const PrimaryFooterComponent = ()=>{
 
     return(
 
-        <footer>
+        <footer className="footer__primary">
 footer
             
         

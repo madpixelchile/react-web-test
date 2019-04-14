@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
 import './slickSlider.scss';
 
-import {SliderPromoUno} from './Slides/Slides';
+import { SliderPromoUno, SliderPromoDos } from './Slides/Slides';
 
 //Home main slider
 export default class SimpleSlider extends Component {
@@ -26,7 +25,7 @@ export default class SimpleSlider extends Component {
 
           </div>
           <div>
-            <h3>2</h3>
+            <SliderPromoDos />
           </div>
           <div>
             <h3>3</h3>

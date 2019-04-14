@@ -1,0 +1,10 @@
+
+$color-primary-header-bg: #000;
+
+.header_{
+
+    &_primary{
+        background: $color-primary-header-bg;
+    }
+
+}

@@ -1,10 +1,12 @@
 import React from 'react';
 
-export const HeaderComponent = ()=>{
+import './header.scss';
+
+export const PrimaryHeaderComponent = ()=>{
 
     return(
 
-        <header>
+        <header className="header__primary">
 
             header
         

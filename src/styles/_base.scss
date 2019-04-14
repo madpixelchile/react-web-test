@@ -1,0 +1,376 @@
+
+ 
+ 
+/*------------------------------------------------------------------------------Base */
+
+ 
+html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    background-color: $color-bg;
+    color: $color-base;
+    font-weight: normal;
+    position: relative;
+    width: 100%;
+      overflow-x: hidden;
+    font: {
+      family: $font-family-base;
+      size: $font-size-base;
+    };
+    
+    @media (max-width: $screen-md-min) {
+       font-size: 14px;   
+    }
+    
+  }
+  
+  /*------------------------------------------------------------------------------Main */
+  
+  main{
+      padding-bottom: 40px;
+  }
+  
+  
+  /*------------------------------------------------------------------------------Healing texts */
+  
+  
+  h1, .h1, 
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    line-height: 100%;
+    margin-bottom: $margen;
+    font-family: $font-family-base;
+    //font-weight: $font-weight-bold;
+    &.thin-text{
+      font-weight: 100;
+    }
+    &.italic-text{
+      font-style: italic;
+    }
+    
+      .biggest-text{
+          font-size: 72px;
+      }
+    
+  }
+  
+  h1,
+  .h1 {
+    font-size: $font-size-h1;
+      font-family: $font-family-bold-italic;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    @media (max-width: $screen-md-min) {
+      font-size: 32px;
+    }
+  }
+  
+  h2,
+  .h2 {
+    font-size: $font-size-h2;
+    font-family: $font-family-bold-italic;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    @media (max-width: $screen-md-min) {
+      font-size: 25px;
+    }
+  }
+  
+  h3,
+  .h3 {
+    font-size: $font-size-h3;
+      font-family: $font-family-bold-italic;
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    &.thin{
+      //font-weight: $font-weight-normal;
+    }
+    @media (max-width: $screen-md-min) {
+      font-size: 22px;
+    }
+  }
+  
+  h4,
+  .h4 {
+    font-size: $font-size-h4;
+      font-family: $font-family-light;
+    font-weight: $font-weight-light;
+    
+    @media (max-width: $screen-md-min) {
+      font-size: 20px;
+    }
+  }
+  
+  h5,
+  .h5 {
+    font-size: $font-size-h5;
+    font-weight: $font-weight-normal;
+      font-family: $font-family-medium;
+    
+    @media only screen and (max-width: $screen-md-min) {
+      font-size: 18px; 
+    }
+      
+      strong{
+          font-family: $font-family-bold;
+      }
+    
+  }
+  h6,
+  .h6 {
+    font-size: $font-size-h6;
+    //font-weight: $font-weight-normal;
+    
+    @media only screen and (max-width: $screen-md-min) {
+      font-size: 15px;
+    }
+  }
+  
+  
+  /*------------------------------------------------------------------------------Strong */
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  /*------------------------------------------------------------------------------Links */
+  
+  a {
+    color: $color-primary;
+      font-family: $font-family-base;
+      outline: 0;
+      &:active, &:hover, &:focus {
+      outline: none;
+      }
+      
+  }
+  
+  
+  button{
+       outline: 0;
+       &:active, &:hover, &:focus {
+      outline: none;
+      }
+  }
+  
+  /*------------------------------------------------------------------------------Radius */
+  
+  .border-radius{
+      @include border-radius(20px);
+  }
+  
+  /*------------------------------------------------------------------------------General text cont */
+  
+  
+  p{
+      font-size: 16px;
+  }
+  
+  
+  .about-module{
+      .general-cont{
+          *{
+              color: $color-white;
+          }
+          p{
+              text-transform: none;
+          }
+          a{
+              color: $color-primary;
+          }
+      }
+  }
+  
+  .general-cont{
+      
+    h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+          color: $color-secondary;
+          text-transform: uppercase;
+          
+          &.like-text{
+              text-transform: none;
+              color: $color-base;
+              font-family: $font-family-bold;
+              font-style: normal;
+          }
+          
+          &.normalized{
+              text-transform: none;
+              font-style: normal;
+          }
+          
+    }
+      
+      h2, .h2{
+          margin-bottom: 50px;
+          line-height: 142%;
+          @media only screen and (max-width: $screen-md-min) { //992px
+              margin-bottom: 10px;
+          }
+      }
+      
+      h4, .h4{
+          line-height: 148%;
+      }
+      
+      h5, .h5{
+          line-height: 135%;
+      }
+      
+    span{
+          margin-bottom: 20px;
+      a{
+        margin-bottom: 0;
+      }
+    }
+    p{
+      margin-bottom: 20px;
+          line-height: 32px;
+          font-size: 18px;
+      a, span{
+        margin-bottom: 0;
+      }
+    }
+      
+      p{
+          + a, + span{
+              margin-top: 20px;
+          }
+      }
+      
+    ul{
+      margin-bottom: 30px;
+    }
+      
+      a{
+          margin-bottom: 20px;
+          &:hover, &:pressed{
+              color: $color-primary-hover;
+          }
+      }
+      
+      strong{
+          font-weight: bold;
+      }
+      
+      .date-text{
+          + h2, + h3, + h4,  + h5, + h6, + p, + span, + a, + img, + iframe{
+              margin-top: 10px;
+          }
+      }
+      
+  }
+  
+  
+  /*------------------------------------------------------------------------------Hiden and show basic transition for extends */
+  
+  
+  .hide-transition{
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0;
+      
+      transition: all 300ms ease;
+  }
+  
+  .show-transition{
+      opacity: 1;
+      visibility: visible;
+      max-height: 5000px;
+      
+      transition: all 300ms ease;
+  }
+  
+  
+  /*------------------------------------------------------------------------------For animated transition on scroll */ 
+  
+  .animated-element{
+      opacity: 0;
+      visibility: hidden;
+      
+      transition: all 600ms ease;
+      
+      .animate-delay-element{
+          opacity: 0;
+          visibility: hidden;
+          
+          transition: all 1200ms ease;
+      }
+      
+      &.visible{
+          opacity: 1;
+          visibility: visible;
+          
+          transition: all 1000ms ease;
+          
+          .fade-left-to-right{
+              transition: all 1200ms ease;
+              left: 0;
+          }
+          
+          .fade-right-to-left{
+              transition: all 1200ms ease;
+              right: 0;
+          }
+          
+          .animate-delay-element{
+              opacity: 1;
+              visibility: visible;
+              
+              transition: all 1200ms ease;
+          }
+          
+      }
+      
+      .fade-left-to-right{
+          position: relative;
+          left: -50px;
+      }
+  
+      .fade-right-to-left{
+          position: relative;
+          right: -50px;
+      }
+      
+  }
+  
+  
+  /*------------------------------------------------------------------------------Toggle hidden element	 */
+  
+  .toggle-hidden-element{
+      overflow: hidden;
+      @extend .hide-transition;
+      &.active{
+          @extend .show-transition;
+          max-height: 20000px;
+          transition: all 1200ms ease;
+      }
+  }
+  
+  /*------------------------------------------------------------------------------Full page bg */
+  
+  .full-page-bg-body{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  
+  
+  /*------------------------------------------------------------------------------Icon examples on modules */
+  
+  .icon-examples span {
+      position: relative;
+      display: block;
+      float: left;
+      text-align: center;
+      background: #ccc;
+      border-radius: 3px;
+      padding: 20px;
+      margin-right: 10px;
+  }

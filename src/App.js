@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import './styles/main.scss';
 
-import {HeaderComponent} from './components/Header/Header';
-import {FooterComponent} from './components/Footer/Footer';
+import {PrimaryHeaderComponent} from './components/Header/Header';
+import {PrimaryFooterComponent} from './components/Footer/Footer';
 
 import {PageHomeComponent} from './components/Page/PageHome/PageHome';
 
@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HeaderComponent />
+        <PrimaryHeaderComponent />
         <PageHomeComponent />
-        <FooterComponent />
+        <PrimaryFooterComponent />
       </div>
     );
   }
