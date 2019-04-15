@@ -5,8 +5,14 @@
   "dependencies": {
     "bootstrap": "4.3.1",
     "node-sass-chokidar": "^1.3.4",
+<<<<<<< HEAD
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+=======
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+>>>>>>> d59ae25f41ad34f1c0cad1e227bdecf209133158
     "react-scripts": "2.1.8",
     "react-slick": "^0.23.2",
     "reactstrap": "^8.0.0"

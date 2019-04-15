@@ -1,0 +1,169 @@
+
+
+@import './../../../../styles/_config';
+
+
+  
+  [class^="icon-"], [class*=" icon-"] { 
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'vtr-icons', sans-serif !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.slider-{
+    //Estilos generales slider home
+    &-home{
+        background: #ccc;
+
+
+        .slick-dots {
+            position: absolute;
+            margin: auto;
+            display: flex !important;
+            bottom: 40px;
+            transform: translate(-50%,0);
+            left: 50%;
+            box-shadow: 0 15px 19px -11px rgba(0,0,0,.75);
+            background: rgba(0,0,0,.25);
+            border-radius: 6px;
+            overflow: hidden;
+            
+            @media only screen and (max-width: $screen-md-min) {
+                justify-content: space-around;
+                box-shadow: none;
+                background: transparent;
+
+                li{
+                    margin: 0 6px;
+                }
+
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 17px;
+                bottom: 0;
+                width: 90%;
+                height: 0;
+                margin: auto;
+                -webkit-box-shadow: 0 20px 31px 16px rgba(0,0,0,.9);
+                box-shadow: 0 20px 31px 16px rgba(0,0,0,.9);
+                z-index: 0;
+                @media only screen and (max-width: $screen-md-min) {
+                    box-shadow: none;
+                }
+            }
+
+            .slick-active{
+                color: #fff;
+                background-color: #00A8EE;
+                @media only screen and (max-width: $screen-md-min) {
+                    background: none;
+                }
+
+                button{
+                    background: $color-primary;
+                }
+
+            }
+
+
+
+            button{
+                background-color: transparent;
+                height: 40px;
+                vertical-align: middle;
+                position: relative;
+                width: 100%;
+                color: #fff;
+                padding: 6px 20px;
+                transition: all .4s ease;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+                z-index: 1;
+
+                @media only screen and (max-width: $screen-md-min) {
+                    border-radius: 100%;
+                    background: #fff;
+                    position: relative;
+                    min-width: 0;
+                    min-height: 0;
+                    padding: 0;
+                    width: 18px;
+                    height: 18px;
+                    margin: 0 auto;
+                    display: block;
+
+                    span{
+                        display: none;
+                    }
+
+
+                }
+            }
+
+
+        }
+
+        .slick-arrow {
+            position: absolute;
+            width: 40px;
+            height: 50px;
+            background: transparent;
+            display: block; 
+            z-index: 2;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: transparent;
+            border: none;
+            line-height: 50px;
+            cursor: pointer;
+
+            @extend [class^="icon-"];
+
+            &:before{
+                font-size: 40px;
+            }
+        }
+    
+        .slick-prev {
+            left: 20px;
+            &:before {
+                content: "\e972";
+                color: #fff;
+            }
+        }
+    
+        .slick-next {
+            right: 20px;
+            &:before {
+                content: "\e973";
+                color: #fff;
+            }
+        }
+
+       
+
+
+    }
+
+
+    
+
+    
+
+}

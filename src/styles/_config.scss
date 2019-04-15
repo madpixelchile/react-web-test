@@ -1,11 +1,11 @@
 
 /*------------------------------------------------------------------------------Main color variables */
 
-$color-base:						#373737;
-$color-primary: 					#DF471E; 
-$color-primary-hover:				#BC3815;
+$color-base:						#393939;
+$color-primary: 					#FF4063; 
+$color-primary-hover:				#dd3857;
 
-$color-secondary:					#122337;
+$color-secondary:					#FF8800;
 $color-secondary-transparent-light:	rgba($color-secondary, 0.9);	
 $color-secondary-transparent-dark:	rgba($color-secondary, 0.95);	
 
@@ -64,12 +64,12 @@ $color-misc-accordion-border:		#DDDDDD;
 /*------------------------------------------------------------------------------Font base */
 
 $font-size-base: 		     16px;
-$font-family-base: 		     'arial';
+$font-family-base: 		     'Conv_NeoSansStd Regular';
 
-$font-family-light:   		 'arial';
-$font-family-medium:  		 'arial';
-$font-family-bold:    		 'arial';
-$font-family-bold-italic:    'arial';
+$font-family-light:   		 'Conv_NeoSansStd Regular';
+$font-family-medium:  		 'Conv_NeoSansStd Regular';
+$font-family-bold:    		 'Conv_neo_sans_bold';
+$font-family-bold-italic:    'Conv_neo_sans_bold_italic';
 
 
 /*------------------------------------------------------------------------------Line height base */

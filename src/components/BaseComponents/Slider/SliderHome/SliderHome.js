@@ -1,43 +1,51 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import './slickSlider.scss';
 
-import { SliderPromoUno, SliderPromoDos } from './Slides/Slides';
+import './../slickSlider.scss';
+
+import './sliderHome.scss';
+
+import SliderPromoUno from './Slides/SliderPromoUno-2019-04-15/';
+import SliderPromoDos from './Slides/SliderPromoDos-2019-04-15/';
 
 //Home main slider
 export default class SimpleSlider extends Component {
   render() {
+
+
+
     const settings = {
+
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      fade: true,
+      customPaging: function(i) {
+
+        const buttonNames = [
+          'Ofertas Hogar Abril',
+          'Galaxy J4 Plus',
+          'Ofertas Negocios Abril'
+        ];
+
+        return (
+            <button><span>{buttonNames[i]}</span></button>
+        );
+      },
     };
     return (
-      <div className="sliderHome">
-        {/* <h2> Single Item</h2> */}
+      <div className="slider--home">
         <Slider {...settings}>
           <div>
-            
             <SliderPromoUno />
-
           </div>
           <div>
             <SliderPromoDos />
           </div>
           <div>
             <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
           </div>
         </Slider>
       </div>
