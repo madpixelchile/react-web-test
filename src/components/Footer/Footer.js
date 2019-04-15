@@ -7,7 +7,7 @@ export const PrimaryFooterComponent = ()=>{
 
     return(
 
-        <footer className="footer__primary">
+        <footer className="footer footer--primary">
 footer
             
         

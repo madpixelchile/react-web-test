@@ -19,9 +19,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-.slider-{
+.slider{
     //Estilos generales slider home
-    &-home{
+    &--home{
         background: #ccc;
 
 
@@ -137,6 +137,10 @@
 
             &:before{
                 font-size: 40px;
+            }
+
+            &.slick-disabled{
+                display: none !important;
             }
         }
     

@@ -7,6 +7,7 @@ import './sliderHome.scss';
 
 import SliderPromoUno from './Slides/SliderPromoUno-2019-04-15/';
 import SliderPromoDos from './Slides/SliderPromoDos-2019-04-15/';
+import SliderPromoTres from './Slides/SliderPromoTres-2019-04-15/';
 
 //Home main slider
 export default class SimpleSlider extends Component {
@@ -36,7 +37,7 @@ export default class SimpleSlider extends Component {
       },
     };
     return (
-      <div className="slider--home">
+      <div className="slider slider--home">
         <Slider {...settings}>
           <div>
             <SliderPromoUno />
@@ -45,7 +46,7 @@ export default class SimpleSlider extends Component {
             <SliderPromoDos />
           </div>
           <div>
-            <h3>3</h3>
+          <SliderPromoTres />
           </div>
         </Slider>
       </div>

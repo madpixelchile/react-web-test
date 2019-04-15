@@ -4,9 +4,10 @@
 
 $color-primary-footer-bg: #000;
 
-.footer_{
+.footer{
 
-    &_primary{
+    &--primary{
+        padding: 20px 0;
         background: $color-primary-footer-bg;
     }
 
