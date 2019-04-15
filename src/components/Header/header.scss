@@ -3,9 +3,10 @@
 
 $color-primary-header-bg: #000;
 
-.header_{
+.header{
 
-    &_primary{
+    &--primary{
+        padding: 20px 0;
         background: $color-primary-header-bg;
     }
 

@@ -6,7 +6,7 @@ export const PrimaryHeaderComponent = ()=>{
 
     return(
 
-        <header className="header__primary">
+        <header className="header header--primary">
 
             header
         
