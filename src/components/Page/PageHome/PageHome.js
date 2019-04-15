@@ -4,9 +4,9 @@ import React, {Component} from 'react';
 
 import {ButtonComponent} from './../../Button/Button';
 
-import SimpleSlider from './../../Slider/mainSlider';
+import SimpleSlider from './../../Slider/SliderHome/SliderHome';
 
-import './../../Slider/sliderHome.scss';
+import './../../Slider/SliderHome/sliderHome.scss';
 
 export class PageHomeComponent extends Component{
 

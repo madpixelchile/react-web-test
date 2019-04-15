@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import './slickSlider.scss';
+import './../slickSlider.scss';
 
-import { SliderPromoUno, SliderPromoDos } from './Slides/Slides';
+import SliderPromoUno from './Slides/SliderPromoUno-2019-04-15/';
+import SliderPromoDos from './Slides/SliderPromoDos-2019-04-15/';
 
 //Home main slider
 export default class SimpleSlider extends Component {
