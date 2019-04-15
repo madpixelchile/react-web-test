@@ -3,16 +3,89 @@
 
 .slider{
     &__promo{
-        &--uno{
 
+        padding: 60px 20px;
+
+        &--uno{
             background: #333;
+
+            *{
+                color: white;
+            }
             
             &__slideCont{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
+                @media only screen and (max-width: $screen-md-min) {
+                    flex-flow: column;
+                }
             }
+
+            .textArea{
+                width: 50%;
+
+                @media only screen and (max-width: $screen-md-min) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    text-align: center;
+
+                }
+
+                &__text{
+                    text-transform: uppercase;
+                    display: block;
+
+                    &--big{
+                        font-size: 70px;
+                        
+                        @media only screen and (max-width: $screen-md-min) {
+                            font-size: 56px;
+                            line-height: 100%;
+                        }
+                    }
+                    &--mid{
+                        font-size: 50px;
+                        font-weight: 100;
+                        font-family: $font-family-light;
+                        @media only screen and (max-width: $screen-md-min) {
+                            font-size: 30px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            
     
+        }
+
+
+
+        .product {
+            width: 100%;
+
+            &.only-md{
+                display: none;
+            }
+
+            @media only screen and (max-width: $screen-md-min) {
+                width: 100%;
+                max-width: 190px;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+
+                &.not-md{
+                    display: none;
+                }
+
+                &.only-md{
+                    display: block;
+                }
+            }
         }
 
     }

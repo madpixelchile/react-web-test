@@ -5,8 +5,7 @@
 
 .btn {
   display: inline-block;
-  padding: ($margen - 2) ($margen * 4) ($margen - 4);
-  //@include border-radius(6px);
+  padding: 8px 40px 10px;
   @include border-radius(36px);
   text-align: center;
   cursor: pointer;
@@ -16,8 +15,6 @@
   vertical-align: middle;
   margin: ($margen * 2) auto 0;
   appearance: none;
-  //height: 43px;
-  //line-height: 43px;
   font-size: 18px;
   width: auto;
   height: auto;
@@ -27,7 +24,7 @@
   
   
 
-  &-primary {
+  &--primary {
     color: $color-white;
     background-color: $color-primary;
     
@@ -45,7 +42,7 @@
       background-color: $color-primary-hover;
     }
     
-    &.ghost {
+    &--ghost {
        border: solid 1px $color-primary;
        background: none;
        color: $color-primary;
@@ -74,7 +71,7 @@
     
   }
 
-  &-secundary {
+  &--secundary {
     color: $color-primary;
     border:2px solid $color-primary;
     //background-color: $color-white;
@@ -141,29 +138,29 @@
 
   //tamaños
   
-  &-biggest{
+  &--biggest{
     padding: 10px 0;
     font-size: 20px;
   }
   
-  &-min {
+  &--min {
     //padding: 0 $margen * 2;
     padding: 3px 20px 1px;
     font-size: 14px;
     line-height: 16px;
   }
-  &-medium {
+  &--medium {
     //height: 32px;
     line-height: normal;
     font-size: 16px;
     padding: 5px 30px 5px;
   }
 
-  &-w-medium {
+  &--w-medium {
     min-width: 230px;
   }
 
-  &-min-h {
+  &--min-h {
     //height: 32px;
     //line-height: 32px;
     //font-size: 16px;
@@ -172,7 +169,7 @@
     padding: 5px 30px 5px;
   }
   
-  &-disabled{
+  &--disabled{
     pointer-events: none;
     // background-color: $color-grey-middle;
     // color: $color-grey-light-two;
