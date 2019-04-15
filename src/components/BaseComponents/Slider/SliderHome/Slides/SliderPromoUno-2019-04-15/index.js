@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 
 import './SliderPromoUno-2019-04-15.scss';
 
+//Slider load img resources
+import ProductImg from './img/example-slide-img.png';
+import BannerBg from './img/example-slider-bg-img.jpg';
+//Slider load img resources
 
 //Date: 13/04/2019 Name: Promo uno
 
@@ -28,11 +32,11 @@ class SliderPromoUno extends Component{
 
         return(
 
-            <div className="sliderPromoUno">
+            <div className="slider__promo slider__promo--uno" style={{ backgroundImage: "url(" + BannerBg + ")" }} >
 
                 <div className="container">
                     <div className="col-xs-12">
-                        <div className="slideCont">
+                        <div className="slider__promo--uno__slideCont">
                             <div className="textArea">
                                 <h1>
                                     <span className="textArea__bigText">Mega 200</span>
@@ -44,13 +48,12 @@ class SliderPromoUno extends Component{
 
                             </div>
                             <div className="graphicArea">
-                                {/* <img className="product" /> */}
+                                <img className="product" src={ProductImg} alt="Producto"/>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* <img className="sliderBackground" /> */}
 
             </div>
 

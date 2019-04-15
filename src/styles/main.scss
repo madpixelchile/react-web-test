@@ -3,11 +3,12 @@
 
 @import '_reset';
 
-@import './fonts';
+@import './_fonts';
 
-@import './config';
-@import './grid';
-@import './base';
+@import './_config';
+@import './_grid';
+@import './_base';
 
-@import 'icons';
+@import '_icons';
 
+@import './_btn';

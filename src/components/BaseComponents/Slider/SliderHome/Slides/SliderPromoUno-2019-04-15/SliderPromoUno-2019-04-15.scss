@@ -1,0 +1,19 @@
+
+@import './../../../../../../styles/_config';
+
+.slider{
+    &__promo{
+        &--uno{
+
+            background: #333;
+            
+            &__slideCont{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+        }
+
+    }
+}

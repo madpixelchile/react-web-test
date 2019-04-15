@@ -2,11 +2,9 @@
 
 import React, {Component} from 'react';
 
-import {ButtonComponent} from './../../Button/Button';
+// import {ButtonComponent} from './../../Button/Button';
 
-import SimpleSlider from './../../Slider/SliderHome/SliderHome';
-
-import './../../Slider/SliderHome/sliderHome.scss';
+import SimpleSlider from './../../BaseComponents/Slider/SliderHome/SliderHome';
 
 export class PageHomeComponent extends Component{
 
@@ -18,10 +16,9 @@ export class PageHomeComponent extends Component{
 
                 <SimpleSlider />
                 
-    
                 pagina
     
-                <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} />
+                {/* <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} /> */}
     
             
             </div>
