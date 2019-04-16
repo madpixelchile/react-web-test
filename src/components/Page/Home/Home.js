@@ -4,9 +4,21 @@ import React, {Component} from 'react';
 
 // import {ButtonComponent} from './../../Button/Button';
 
+import {ClickToCallModal} from './../../Modal/Modals/ClickToCall';
+
+
 import ModalExample from "../../Modal/Modal";
+
+
+// const loadedModalList = [
+//     ClickToCallModal,
+
+// ]
+
 import SimpleSlider from './../../BaseComponents/Slider/SliderHome/SliderHome';
 // import HomeTenderGrid from './../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
+
+
 
 export class PageHomeComponent extends Component{
 
@@ -21,7 +33,7 @@ export class PageHomeComponent extends Component{
     
                 {/* <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} /> */}
     
-                <ModalExample/>
+                <ModalExample loadedModal={<ClickToCallModal/>}/>
             </div>
     
         ); 
