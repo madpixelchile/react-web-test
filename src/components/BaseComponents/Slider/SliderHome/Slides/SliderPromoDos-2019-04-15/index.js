@@ -19,6 +19,8 @@ class SliderPromoDos extends Component{
         constructor(props){
             super(props);
 
+            this.setButtonAction = this.setButtonAction.bind(this);
+
             this.state = {
                 stateOne: 'nothing'
             }
@@ -26,12 +28,13 @@ class SliderPromoDos extends Component{
 
         setButtonAction = () =>{
             this.setState({
-                stateOne: 'this button has been pressed'
+                stateOne: 'this button has been pressed 2'
             });
         }
     
         render(){
 
+            console.log(this.state.stateOne);
     
             return(
     
@@ -48,11 +51,8 @@ class SliderPromoDos extends Component{
                                         <span className="textArea__text textArea__text--mid"> + 80 canales</span>
                                         {/* <span className="textArea__smallText"></span> */}
                                     </h1>
-                                    
                                     <img className="product only-md" src={ProductImgMobile} alt="Producto"/>
-    
-                                    <button className="btn btn--primary" onClick={this.setButtonAction}>¡Lo quiero! {this.state.stateOne}</button>
-    
+                                    <button id="2" className="btn btn--primary" onClick={this.setButtonAction}>¡Lo quiero 2! {this.state.stateOne}</button>
                                 </div>
     
     
