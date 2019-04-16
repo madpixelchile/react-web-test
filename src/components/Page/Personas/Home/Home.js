@@ -4,10 +4,10 @@ import React, {Component} from 'react';
 
 // import {ButtonComponent} from './../../Button/Button';
 
-import {ClickToCallModal} from './../../Modal/Modals/ClickToCall';
+import {ClickToCallModal} from './../../../Modal/Modals/ClickToCall';
 
 
-import ModalExample from "../../Modal/Modal";
+import ModalExample from "./../../../Modal/Modal";
 
 
 // const loadedModalList = [
@@ -15,7 +15,7 @@ import ModalExample from "../../Modal/Modal";
 
 // ]
 
-import SimpleSlider from './../../BaseComponents/Slider/SliderHome/SliderHome';
+import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
 // import HomeTenderGrid from './../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
 

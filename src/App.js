@@ -5,7 +5,7 @@ import './styles/main.scss';
 import {PrimaryHeaderComponent} from './components/Header/Header';
 import {PrimaryFooterComponent} from './components/Footer/Footer';
 
-import {PageHomeComponent} from './components/Page/Home/Home';
+import {PageHomeComponent} from './components/Page/Personas/Home/Home';
 
 class App extends Component {
   render() {
