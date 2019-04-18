@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Button, Modal } from 'reactstrap';
-import './../../styles/_modal-bootstrap.min.scss'
+import './../../styles/_modal.scss'
 
 import PostDataLoad from './../BaseComponents/Data/PostData.json'
 

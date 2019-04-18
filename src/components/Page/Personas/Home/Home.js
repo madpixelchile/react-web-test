@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 
 import ModalExample from "./../../../Modal/Modal";
 
+import ExampleTab from "./../../../Tab/Tabs";
+
 import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
 import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
@@ -78,6 +80,8 @@ export class PageHomeComponent extends Component{
                 
     
                 <ModalExample modalContent={'ModalUno'} classToToggle={'active'}/>
+
+                <ExampleTab classToToggle={'show'}/>
 
             </div>
     
