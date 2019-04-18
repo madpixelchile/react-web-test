@@ -21,6 +21,8 @@ import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTende
 
 // import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
 
+//making json better...
+
 import {
     SquareTopLeftImg,
     TopLeftMobileImg,
@@ -28,6 +30,8 @@ import {
     RightMobileImg,
     BottomLeftImg,
 } from './../../../BaseComponents/HomeTenderGrid/HomeResources'
+
+//making json better...
 
 export class PageHomeComponent extends Component{
 
