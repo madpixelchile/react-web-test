@@ -1,19 +1,22 @@
 import React, {Component} from 'react';
 
-// import { HTGTopModule } from './HTGModules/HTGTopModule';
+import './homeTenderGrid.scss';
 
-class HomeTenderGrid extends Component(){
+export class HomeTenderGrid extends Component{
+
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return(
-
-            <section className="HomeTenderGrid">
-                {/* <HTGTopModule /> */}
-            </section>
-
+            <div className={`${this.props.gridSquareDirection} homeTenderBox`} style={{ backgroundImage: "url(" + this.props.gridSquareImg + ")" }}>
+                <a href={this.props.goToUrl}></a>
+                {/* <div className="not-md" ></div> */}
+                {/* <div className="only-md" style={{ backgroundImage: "url(" + this.props.gridSquareImgMobile + ")" }}></div> */}
+            </div>
         )
     }
 
 }
 
-export default HomeTenderGrid;

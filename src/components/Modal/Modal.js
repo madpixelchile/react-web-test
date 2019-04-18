@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Modal } from 'reactstrap';
 import './../../styles/_modal-bootstrap.min.scss'
 
 import PostDataLoad from './../BaseComponents/Data/PostData.json'
-
 
 class ModalExample extends Component {
     constructor(props) {
@@ -14,8 +12,6 @@ class ModalExample extends Component {
 
         this.state = {
             modal: false,
-            traeElNombre: this.props.nombre,
-            traeLaFoto: this.props.srcFoto,
 
             bringModalContent: '',
             toggleClass:       '',
@@ -46,34 +42,17 @@ class ModalExample extends Component {
             console.log(currentModal),
             
             <div>
-                {/* <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button> */}
-                {/* <Button color="danger" onClick={this.toggle}>Abrir popUp</Button> */}
 
                 <Button color="danger" onClick={this.toggle} className={this.state.toggleClass}>Abrir popUp dos</Button>
 
                 <Modal isOpen={this.state.modal} centered={false} toggle={this.toggle} className={this.props.className}>
 
-                <Button variant="secondary" onClick={this.handleClose}>
-              Close
-            </Button>
+                <Button variant="secondary" onClick={this.handleClose}> Close X </Button>
 
-                    <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-                    <ModalBody>
-                        <img src={this.state.traeLaFoto} alt="Imagen"/>
-                        {this.state.traeElNombre}
-                        
-
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={this.log}>Do Something</Button>
-                        <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-                    </ModalFooter>
-
-                    <p>
-                        {currentModal && currentModal.map((modal)=> (
-                            modal.html
-                        ))}
-                    </p>
+                    {/* Test json load data */}
+                    {currentModal && currentModal.map((modal) => (
+                        modal.html
+                    ))}
 
                 </Modal>
             </div>

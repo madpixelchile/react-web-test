@@ -5,9 +5,15 @@ import React, {Component} from 'react';
 import ModalExample from "./../../../Modal/Modal";
 
 import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
-// import HomeTenderGrid from './../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
+import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
+import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
+// import gridSquareTopLeftMobile from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-MB.jpg';
 
+import gridSquareTopRightImg from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-dk.png';
+import gridSquareBottomLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C03-iPhone6S-DK.png';
+import gridSquareBottomCenterImg from './../../../BaseComponents/HomeTenderGrid/img/c04-negocios2-dk-1.png';
+import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
 
 export class PageHomeComponent extends Component{
 
@@ -20,9 +26,51 @@ export class PageHomeComponent extends Component{
 
                 <SimpleSlider />
                 
-                {/* <HomeTenderGrid /> */}
-    
-                {/* <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} /> */}
+                <div className="container-fluid">
+
+                    <div className="row small-gutter">
+
+                        <div className="col-md-6">
+                            <HomeTenderGrid 
+                                gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
+                                gridSquareImg={gridSquareTopLeftImg}
+                                // gridSquareImgMobile={gridSquareTopLeftMobile}
+                                goToUrl={'#;'}
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <HomeTenderGrid 
+                                gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
+                                gridSquareImg={gridSquareTopRightImg}
+                                goToUrl={'#;'}
+                             />
+                        </div>
+                        <div className="col-lg-five-2 col-md-4 col-xs-12">
+                            <HomeTenderGrid 
+                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
+                                gridSquareImg={gridSquareBottomLeftImg}
+                                goToUrl={'#;'}
+                            />    
+                        </div>
+                        <div className="col-lg-five-1 col-md-4 col-xs-12">
+                            <HomeTenderGrid 
+                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--center'} 
+                                gridSquareImg={gridSquareBottomCenterImg}
+                                goToUrl={'#;'}
+                            />    
+                        </div>
+                        <div className="col-lg-five-2 col-md-4 col-xs-12">
+                            <HomeTenderGrid 
+                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--right'} 
+                                gridSquareImg={gridSquareBottomRightImg}
+                                goToUrl={'#;'}
+                            />    
+                        </div>
+
+                    </div>
+
+                </div>
+                
     
                 <ModalExample modalContent={'ModalUno'} classToToggle={'active'}/>
 
@@ -31,5 +79,4 @@ export class PageHomeComponent extends Component{
         ); 
     }   
     
-
 }
