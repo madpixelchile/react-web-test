@@ -4,16 +4,12 @@ import './homeTenderGrid.scss';
 
 export class HomeTenderGrid extends Component{
 
-    // constructor(props){
-    //     super(props);
-    // }
-
     render(){
         return(
-            <div className={`${this.props.gridSquareDirection} homeTenderBox`} style={{ backgroundImage: "url(" + this.props.gridSquareImg + ")" }}>
-                <a href={this.props.goToUrl}></a>
-                {/* <div className="not-md" ></div> */}
-                {/* <div className="only-md" style={{ backgroundImage: "url(" + this.props.gridSquareImgMobile + ")" }}></div> */}
+            <div className={`${this.props.gridSquareDirection} homeTenderBox`} >
+                <a href={this.props.goToUrl}>&nbsp;</a>
+                <div className="imgBox not-md" style={{ backgroundImage: "url(" + this.props.gridSquareImg + ")" }}></div>
+                <div className="imgBox only-md" style={{ backgroundImage: "url(" + this.props.gridSquareImgMobile + ")" }}></div>
             </div>
         )
     }

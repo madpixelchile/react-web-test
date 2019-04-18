@@ -1,8 +1,9 @@
 
+@import './../../../styles/_config.scss';
+
 .homeTenderBox{
     width: 100%;
     position: relative;
-    background-size: cover;
 
     a{
         cursor: pointer;
@@ -11,29 +12,70 @@
         top: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
+        opacity: 0;
     }
 
     &__top{
         min-height: 360px;
         
         &--left{
-            background-position: top right;
+            .imgBox{
+                background-position: top right;
+            }
         }
         &--right{
-            background-position: top left;
+            .imgBox{
+                background-position: top left;
+            }
         }
     }
 
     &__bottom{
         min-height: 510px;
         &--left{
-            background-position: top right;
+            .imgBox{
+                background-position: top right;
+            }
         }
         &--center{
-            background-position: top center;
+            .imgBox{
+                background-position: top center;
+            }
         }
         &--right{
-            background-position: top left;
+            .imgBox{
+                background-position: top left;
+            }
         }
     }
+
+    .imgBox{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        @media only screen and (max-width: $screen-md-min) {
+            background-size: initial;
+            background-position: center center;
+        }
+    }
+
+    .only-md{
+        display: none;
+    }
+
+    @media only screen and (max-width: $screen-md-min) {
+        .not-md{
+            display: none;
+        }
+
+        .only-md{
+            display: block;
+        }
+    }	
+
+
 }

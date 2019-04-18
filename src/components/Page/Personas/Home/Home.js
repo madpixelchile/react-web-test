@@ -9,13 +9,25 @@ import ExampleTab from "./../../../Tab/Tabs";
 import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
 import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
-import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
+// import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
 // import gridSquareTopLeftMobile from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-MB.jpg';
 
-import gridSquareTopRightImg from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-dk.png';
-import gridSquareBottomLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C03-iPhone6S-DK.png';
-import gridSquareBottomCenterImg from './../../../BaseComponents/HomeTenderGrid/img/c04-negocios2-dk-1.png';
-import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
+// import gridSquareTopRightImg from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-dk.png';
+// import gridSquareTopRightImgMobile from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-mb-1.png';
+
+// import gridSquareBottomLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C03-iPhone6S-DK.png';
+
+// import gridSquareBottomCenterImg from './../../../BaseComponents/HomeTenderGrid/img/c04-negocios2-dk-1.png';
+
+// import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
+
+import {
+    SquareTopLeftImg,
+    TopLeftMobileImg,
+    TopRightImg,
+    RightMobileImg,
+    BottomLeftImg,
+} from './../../../BaseComponents/HomeTenderGrid/HomeResources'
 
 export class PageHomeComponent extends Component{
 
@@ -35,36 +47,37 @@ export class PageHomeComponent extends Component{
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
-                                gridSquareImg={gridSquareTopLeftImg}
-                                // gridSquareImgMobile={gridSquareTopLeftMobile}
+                                gridSquareImg={SquareTopLeftImg}
+                                gridSquareImgMobile={TopLeftMobileImg}
                                 goToUrl={'#;'}
                             />
                         </div>
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
-                                gridSquareImg={gridSquareTopRightImg}
+                                gridSquareImg={TopRightImg}
+                                gridSquareImgMobile={RightMobileImg}
                                 goToUrl={'#;'}
                              />
                         </div>
                         <div className="col-lg-five-2 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
-                                gridSquareImg={gridSquareBottomLeftImg}
+                                gridSquareImg={BottomLeftImg}
                                 goToUrl={'#;'}
                             />    
                         </div>
                         <div className="col-lg-five-1 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--center'} 
-                                gridSquareImg={gridSquareBottomCenterImg}
+                                // gridSquareImg={gridSquareBottomCenterImg}
                                 goToUrl={'#;'}
                             />    
                         </div>
                         <div className="col-lg-five-2 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--right'} 
-                                gridSquareImg={gridSquareBottomRightImg}
+                                // gridSquareImg={gridSquareBottomRightImg}
                                 goToUrl={'#;'}
                             />    
                         </div>
