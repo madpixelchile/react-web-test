@@ -1,0 +1,12 @@
+[
+    
+    {
+        "type": "ModalUno",
+        "html": "Modal Uno"
+    },
+     {
+        "type": "ModalDos",
+        "html": "Modal Dos"
+    }
+    
+]
