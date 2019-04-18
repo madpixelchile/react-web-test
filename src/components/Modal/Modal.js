@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import './../../styles/_modal-bootstrap.min.scss'
+import './../../styles/_modal.scss'
 
 
 class ModalExample extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: true,
+            modal: false,
             traeElNombre: this.props.nombre,
             traeLaFoto: this.props.srcFoto,
         };
@@ -30,7 +30,7 @@ class ModalExample extends Component {
                 <Modal isOpen={this.state.modal} centered={false} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
                     <ModalBody>
-                        <img src={this.state.traeLaFoto}/>
+                        <img src={this.state.traeLaFoto} alt="logo"/>
                         {this.state.traeElNombre}
                     </ModalBody>
                     <ModalFooter>
