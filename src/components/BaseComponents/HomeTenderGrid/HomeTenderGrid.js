@@ -11,7 +11,7 @@ export class HomeTenderGrid extends Component{
     render(){
         return(
             <div className={`${this.props.gridSquareDirection} homeTenderBox`} style={{ backgroundImage: "url(" + this.props.gridSquareImg + ")" }}>
-                <a href={this.props.goToUrl}></a>
+                <a href={this.props.goToUrl} title={this.propsTitleUrl}>&nbsp;</a>
                 {/* <div className="not-md" ></div> */}
                 {/* <div className="only-md" style={{ backgroundImage: "url(" + this.props.gridSquareImgMobile + ")" }}></div> */}
             </div>

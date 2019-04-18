@@ -35,35 +35,40 @@ export class PageHomeComponent extends Component{
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
                                 gridSquareImg={gridSquareTopLeftImg}
                                 // gridSquareImgMobile={gridSquareTopLeftMobile}
-                                goToUrl={'#;'}
+                                goToUrl={'./'}
+                                TitleUrl={'Enlace a la sección Uno'}
                             />
                         </div>
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
                                 gridSquareImg={gridSquareTopRightImg}
-                                goToUrl={'#;'}
+                                goToUrl={'./'}
+                                TitleUrl={'Enlace a la sección Dos'}
                              />
                         </div>
                         <div className="col-lg-five-2 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
                                 gridSquareImg={gridSquareBottomLeftImg}
-                                goToUrl={'#;'}
+                                goToUrl={'./'}
+                                TitleUrl={'Enlace a la sección Tres'}
                             />    
                         </div>
                         <div className="col-lg-five-1 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--center'} 
                                 gridSquareImg={gridSquareBottomCenterImg}
-                                goToUrl={'#;'}
+                                goToUrl={'./'}
+                                TitleUrl={'Enlace a la sección Cuatro'}
                             />    
                         </div>
                         <div className="col-lg-five-2 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--right'} 
                                 gridSquareImg={gridSquareBottomRightImg}
-                                goToUrl={'#;'}
+                                goToUrl={'./'}
+                                TitleUrl={'Enlace a la sección Cinco'}
                             />    
                         </div>
 
