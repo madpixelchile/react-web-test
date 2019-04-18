@@ -1,0 +1,16 @@
+.tab-content  {
+    > .tab-pane {
+        visibility: block;
+        transition: all 3s ease-out;
+        &.fade {
+            transition: opacity 0.15s linear;
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+            &:not(.active) {
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+}

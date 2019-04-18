@@ -1,0 +1,16 @@
+
+
+[
+    {
+      "modalName": "modalOne",
+      "modalContent": [
+        "<div><p>Modal Uno</p></div>"
+      ]
+    },
+    {
+      "modalName": "ModalTwo",
+      "modalContent": [
+        "<div><p>Modal Dos</p></div>"
+      ]
+    }
+  ]

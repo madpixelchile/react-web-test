@@ -2,12 +2,14 @@
 
 import React, {Component} from 'react';
 
-// import {ButtonComponent} from './../../Button/Button';
+import ModalExample from "./../../../Modal/Modal";
 
-import ModalExample from "../../Modal/Modal";
-import ExampleTab from "../../Tab/Tabs";
-import SimpleSlider from './../../BaseComponents/Slider/SliderHome/SliderHome';
+import ExampleTab from "./../../../Tab/Tabs";
+
+import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
 // import HomeTenderGrid from './../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
+
+
 
 export class PageHomeComponent extends Component{
 
@@ -15,6 +17,8 @@ export class PageHomeComponent extends Component{
         return(
             
             <div className="mainContent">
+                
+                <ModalExample modalContent={'ModalDos'}/>
 
                 <SimpleSlider />
                 
@@ -22,9 +26,10 @@ export class PageHomeComponent extends Component{
     
                 {/* <ButtonComponent className="boton-1" buttonText="Haz click aquí" buttonAction={'modal'} /> */}
     
-                <ModalExample nombre="Lorem ipsum..." srcFoto="https://vtr.com/contenidos/kf4-logo-vtr-2.png"/>
+                <ModalExample modalContent={'ModalUno'} classToToggle={'active'}/>
 
-                <ExampleTab />
+                <ExampleTab classToToggle={'show'}/>
+
             </div>
     
         ); 

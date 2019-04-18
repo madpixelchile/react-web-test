@@ -17,6 +17,8 @@ class SliderPromoTres extends Component{
     constructor(props){
         super(props);
 
+        this.setButtonAction = this.setButtonAction.bind(this);
+
         this.state = {
             stateOne: 'nothing'
         }
@@ -24,7 +26,7 @@ class SliderPromoTres extends Component{
 
     setButtonAction = () =>{
         this.setState({
-            stateOne: 'this button has been pressed'
+            stateOne: 'this button has been pressed 3'
         });
     }
 
@@ -50,7 +52,7 @@ class SliderPromoTres extends Component{
                                 
                                 <img className="product only-md" src={ProductImgMobile} alt="Producto"/>
 
-                                <button className="btn btn--primary" onClick={this.setButtonAction}>¡Lo quiero! {this.state.stateOne}</button>
+                                <button className="btn btn--primary" onClick={this.setButtonAction}>¡Lo quiero 3! {this.state.stateOne}</button>
 
                             </div>
 

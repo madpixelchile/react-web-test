@@ -13,8 +13,6 @@ import SliderPromoTres from './Slides/SliderPromoTres-2019-04-15/';
 export default class SimpleSlider extends Component {
   render() {
 
-
-
     const settings = {
 
       dots: true,
@@ -40,6 +38,7 @@ export default class SimpleSlider extends Component {
       <div className="slider slider--home">
         <Slider {...settings}>
           <div>
+            {/* <SliderPromoUno products={this.state.data}/> */}
             <SliderPromoUno />
           </div>
           <div>
