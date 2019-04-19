@@ -1,0 +1,18 @@
+
+
+
+[
+    {
+      "topLeftSquare":
+      {
+        "DeskImgUrl": "C01-S10-DK.jpg",
+        "MobileImgUrl": "C01-S10-MB.jpg"
+
+      },
+        "topRightSquare":
+        {
+            "DeskImgUrl": "c02-bandaancha-dk.png",
+            "MobileImgUrl": "c02-bandaancha-mb-1.png"
+        }
+    }
+  ]

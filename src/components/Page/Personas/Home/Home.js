@@ -23,20 +23,34 @@ import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTende
 
 //making json better...
 
-import {
-    SquareTopLeftImg,
-    TopLeftMobileImg,
-    TopRightImg,
-    RightMobileImg,
-    BottomLeftImg,
-} from './../../../BaseComponents/HomeTenderGrid/HomeResources'
+// import {
+//     SquareTopLeftImg,
+//     TopLeftMobileImg,
+//     TopRightImg,
+//     RightMobileImg,
+//     BottomLeftImg,
+// } from './../../../BaseComponents/HomeTenderGrid/HomeResources'
 
 //making json better...
 
+import HomeTenderGridData from './../../../BaseComponents/HomeTenderGrid/HomeResources.json';
+
+
 export class PageHomeComponent extends Component{
 
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         pathkuah: './../../../BaseComponents/HomeTenderGrid/img/'
+    //     }
+    // }
+
     render(){
+
+
         return(
+
+            
             
             <div className="mainContent">
                 
@@ -51,23 +65,23 @@ export class PageHomeComponent extends Component{
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
-                                gridSquareImg={SquareTopLeftImg}
-                                gridSquareImgMobile={TopLeftMobileImg}
+                                gridSquareImg={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl)} 
+                                gridSquareImgMobile={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.MobileImgUrl)}
                                 goToUrl={'#;'}
                             />
                         </div>
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
-                                gridSquareImg={TopRightImg}
-                                gridSquareImgMobile={RightMobileImg}
+                                gridSquareImg={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.DeskImgUrl)}
+                                gridSquareImgMobile={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.MobileImgUrl)}
                                 goToUrl={'#;'}
                              />
                         </div>
                         <div className="col-lg-five-2 col-md-4 col-xs-12">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
-                                gridSquareImg={BottomLeftImg}
+                                // gridSquareImg={BottomLeftImg}
                                 goToUrl={'#;'}
                             />    
                         </div>

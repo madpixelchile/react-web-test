@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import './homeTenderGrid.scss';
 
+import './HomeResources.json';
+
 export class HomeTenderGrid extends Component{
 
     render(){
