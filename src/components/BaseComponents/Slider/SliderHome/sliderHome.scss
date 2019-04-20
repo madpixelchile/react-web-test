@@ -163,9 +163,24 @@
 
     }
 
+    .slider__promo{
+        button, a{
+            pointer-events: none;
+            // display: none;
+        }
+    }
+    .slick-active{
+        z-index: 1;
+        .slider__promo{
+            // z-index: 1;
+            button, a{
+                pointer-events: initial;
+                // display: inline-block; 
+            }
+        }
 
-    
-
+        
+    }
     
 
 }

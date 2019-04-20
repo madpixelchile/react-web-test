@@ -1,13 +1,11 @@
 
-
-
 [
     {
         "topLeftSquare":
         {
             "DeskImgUrl": "C01-S10-DK.jpg",
             "MobileImgUrl": "C01-S10-MB.jpg",
-            "ImgAlt": "Imagen correspondiente a...",
+            "ImgAlt": "Imagen correspondiente a Galaxy S10",
             "goToUrl": "#,",
             "LinkTitle": "Enlace a ..."
         },
@@ -15,7 +13,31 @@
         {
             "DeskImgUrl": "c02-bandaancha-dk.png",
             "MobileImgUrl": "c02-bandaancha-mb-1.png",
-            "ImgAlt": "Imagen correspondiente a...",
+            "ImgAlt": "Imagen correspondiente a Banda Ancha",
+            "goToUrl": "#,",
+            "LinkTitle": "Enlace a ..."
+        },
+        "bottomLeftSquare":
+        {
+            "DeskImgUrl": "C03-iPhone6S-DK.png",
+            "MobileImgUrl": "C03-iPhone6S-MB.png",
+            "ImgAlt": "Imagen correspondiente a Iphone 6S",
+            "goToUrl": "#,",
+            "LinkTitle": "Enlace a ..."
+        },
+        "bottomCenterSquare":
+        {
+            "DeskImgUrl": "c04-negocios2-dk-1.png",
+            "MobileImgUrl": "C04-Negocios-mb.png",
+            "ImgAlt": "Imagen correspondiente a Negocios",
+            "goToUrl": "#,",
+            "LinkTitle": "Enlace a ..."
+        },
+        "bottomRightSquare":
+        {
+            "DeskImgUrl": "C05-GOT-DK.png",
+            "MobileImgUrl": "C05-GOT-MB.png",
+            "ImgAlt": "Imagen correspondiente a GOT",
             "goToUrl": "#,",
             "LinkTitle": "Enlace a ..."
         }

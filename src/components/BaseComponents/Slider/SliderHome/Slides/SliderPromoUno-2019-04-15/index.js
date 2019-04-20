@@ -1,38 +1,17 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 
 import './SliderPromoUno-2019-04-15.scss';
 
 //Slider load img resources
 import ProductImg from './img/example-slide-img.png';
 import ProductImgMobile from './img/example-slide-mobile-img.png';
-
 import BannerBg from './img/example-slider-bg-img.jpg';
 //Slider load img resources
 
 //Date: 13/04/2019 Name: Promo uno
 
-class SliderPromoUno extends Component{
-
-    constructor(props){
-        super(props);
-        
-        this.setButtonActionOne = this.setButtonActionOne.bind(this);
-
-        this.state = {
-            stateOneToke: 'nothing'
-        }
-    }
-
-        setButtonActionOne = () =>{
-            this.setState({
-                stateOneToke: 'this button has been pressed 1'
-            });
-        }
-
-    render(){
-
-        console.log(this.state.stateOneToke); // console log test here, because in same function of change doesn't works... i don't know why :(
+const SliderPromoUno = () => {
 
         return(
 
@@ -52,7 +31,7 @@ class SliderPromoUno extends Component{
                                 
                                 <img className="product only-md" src={ProductImgMobile} alt="Producto"/>
 
-                                <button id="1" className="btn btn--primary" onClick={this.setButtonActionOne}>¡Lo quiero 1! {this.state.stateOneToke}</button>
+                                <a href="#;" id="1" className="btn btn--primary" title="Enlace a...">¡Lo quiero 1!</a>
 
                             </div>
 
@@ -70,7 +49,6 @@ class SliderPromoUno extends Component{
         );
 
         
-    }
     
 
 }
