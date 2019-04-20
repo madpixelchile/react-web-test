@@ -29,7 +29,7 @@ export class PageHomeComponent extends Component{
  
             <div className="mainContent">
                 
-                <ModalExample modalContent={'ModalDos'}/>
+                <ModalExample modalContent={'ModalDos'} modalStructure={'ModalOnlyText'} buttonText={'Abrir modal sólo texto'}/>
 
                 <SimpleSlider />
                 
@@ -93,7 +93,7 @@ export class PageHomeComponent extends Component{
                 </div>
                 
     
-                <ModalExample modalContent={'ModalUno'} classToToggle={'active'}/>
+                <ModalExample modalContent={'ModalUno'} classToToggle={'active'} buttonText={'Abrir modal C2C'} modalStructure={'ModalClickToCall'}/>
 
                 <ExampleTab classToToggle={'show'}/>
 
