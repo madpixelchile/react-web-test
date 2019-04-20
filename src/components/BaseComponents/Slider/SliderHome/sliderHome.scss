@@ -1,9 +1,7 @@
 
 
-@import './../../../../styles/_config';
+@import 'src/styles/_config';
 
-
-  
   [class^="icon-"], [class*=" icon-"] { 
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'vtr-icons', sans-serif !important;

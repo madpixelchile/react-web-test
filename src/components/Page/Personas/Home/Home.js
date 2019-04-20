@@ -10,63 +10,23 @@ import ExampleTab from "src/components/Tab/Tabs";
 import SimpleSlider from 'src/components/BaseComponents/Slider/SliderHome/SliderHome';
 import {HomeTenderGrid} from 'src/components/BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
-// import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
-// import gridSquareTopLeftMobile from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-MB.jpg';
-
-// import gridSquareTopRightImg from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-dk.png';
-// import gridSquareTopRightImgMobile from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-mb-1.png';
-
-// import gridSquareBottomLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C03-iPhone6S-DK.png';
-
-// import gridSquareBottomCenterImg from './../../../BaseComponents/HomeTenderGrid/img/c04-negocios2-dk-1.png';
-
-// import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
-
-//making json better...
-
-// import {
-//     SquareTopLeftImg,
-//     TopLeftMobileImg,
-//     TopRightImg,
-//     RightMobileImg,
-//     BottomLeftImg,
-// } from './../../../BaseComponents/HomeTenderGrid/HomeResources'
-
-//making json better...
-
-// import {HomeTenderGridPath} from './../../../BaseComponents/HomeTenderGrid/HomeResources';
-
-// import * as imgBasePath from './../../../../BaseComponents/HomeTenderGrid/img/';
-
 import HomeTenderGridData from 'src/components/BaseComponents/HomeTenderGrid/HomeResources.json';
-
-
-
-
 
 export class PageHomeComponent extends Component{
 
     constructor(props){
         super(props);
 
-        
-
         this.state = {
             imgPath: 'src/components/BaseComponents/HomeTenderGrid/img/',
         }
-        
-        
-        
-    }
 
+    }
 
     render(){
 
-
         return(
-           
-            
-            
+ 
             <div className="mainContent">
                 
                 <ModalExample modalContent={'ModalDos'}/>
