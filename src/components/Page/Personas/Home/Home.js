@@ -1,13 +1,14 @@
 
 
 import React, {Component} from 'react';
+// import { BrowserRouter, Route } from 'react-router-dom';
 
-import ModalExample from "./../../../Modal/Modal";
+import ModalExample from "src/components/Modal/Modal";
 
-import ExampleTab from "./../../../Tab/Tabs";
+import ExampleTab from "src/components/Tab/Tabs";
 
-import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
-import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
+import SimpleSlider from 'src/components/BaseComponents/Slider/SliderHome/SliderHome';
+import {HomeTenderGrid} from 'src/components/BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
 // import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
 // import gridSquareTopLeftMobile from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-MB.jpg';
@@ -33,23 +34,37 @@ import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTende
 
 //making json better...
 
-import HomeTenderGridData from './../../../BaseComponents/HomeTenderGrid/HomeResources.json';
+// import {HomeTenderGridPath} from './../../../BaseComponents/HomeTenderGrid/HomeResources';
+
+// import * as imgBasePath from './../../../../BaseComponents/HomeTenderGrid/img/';
+
+import HomeTenderGridData from 'src/components/BaseComponents/HomeTenderGrid/HomeResources.json';
+
+
+
 
 
 export class PageHomeComponent extends Component{
 
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         pathkuah: './../../../BaseComponents/HomeTenderGrid/img/'
-    //     }
-    // }
+    constructor(props){
+        super(props);
+
+        
+
+        this.state = {
+            imgPath: 'src/components/BaseComponents/HomeTenderGrid/img/',
+        }
+        
+        
+        
+    }
+
 
     render(){
 
 
         return(
-
+           
             
             
             <div className="mainContent">
@@ -65,16 +80,17 @@ export class PageHomeComponent extends Component{
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
-                                gridSquareImg={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl)} 
-                                gridSquareImgMobile={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.MobileImgUrl)}
+                                gridSquareImg={require( 'src/components/BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl)} 
+                                gridSquareImgMobile={require('src/components/BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topLeftSquare.MobileImgUrl)}
+                                gridButtonTitle = {HomeTenderGridData[0].topLeftSquare.LinkTitle}
                                 goToUrl={'#;'}
                             />
                         </div>
                         <div className="col-md-6">
                             <HomeTenderGrid 
                                 gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
-                                gridSquareImg={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.DeskImgUrl)}
-                                gridSquareImgMobile={require('./../../../BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.MobileImgUrl)}
+                                gridSquareImg={require('src/components/BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.DeskImgUrl)}
+                                gridSquareImgMobile={require('src/components/BaseComponents/HomeTenderGrid/img/' + HomeTenderGridData[0].topRightSquare.MobileImgUrl)}
                                 goToUrl={'#;'}
                              />
                         </div>
