@@ -43,7 +43,8 @@ class ModalExample extends Component {
         return (this.state.bringModalContent === modal.type ? modal : "")
     })  
 
-        
+        const isModalStructure = this.state.bringModalStructure;
+        const withoutStrcuture = 'Not structure asigned here.';
 
         return (
             console.log(currentModal),
@@ -61,9 +62,22 @@ class ModalExample extends Component {
                         modal.html
                     ))} */}
 
-                    {/* Modal Layout types */}
-                    { /* Type text layout */ this.state.bringModalStructure === 'ModalOnlyText' ? <ModalOnlyText /> : ''}
-                    { /* Type click to call layout */ this.state.bringModalStructure === 'ModalClickToCall' ? <ModalClickToCall /> : ''}
+
+                    {
+                        // Modal structure types
+                        (() => {
+                            switch(isModalStructure) {
+                            case 'ModalOnlyText':
+                                return <ModalOnlyText />;
+                            case 'ModalClickToCall':
+                                return <ModalClickToCall />;
+                            default:
+                                return withoutStrcuture;
+                            }
+                        })()
+                    }
+
+
 
                 </Modal>
             </div>
