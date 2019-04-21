@@ -15,15 +15,15 @@ export class NavBar extends Component {
     }
 
     mobileMenuButton = () => {
-        this.setState( prevState => ({
+        this.setState({
             toggleClassButton: !this.state.toggleClassButton,
-        }));
+        });
     }
 
     render() {
         return (
             <div className={`${this.state.toggleClassButton ? 'active' : ''} mobileCollapsed`}>
-                <button onClick={this.mobileMenuButton} className={`${this.state.toggleClassButton ? 'active' : ''} btn btn-primary`}>Deploy button</button>
+                <button onClick={this.mobileMenuButton} className={`${this.state.toggleClassButton ? 'active' : ''} btn btn--primary`}>Deploy button</button>
                 <nav>
                     <ul className="NavList">
                         <li>
