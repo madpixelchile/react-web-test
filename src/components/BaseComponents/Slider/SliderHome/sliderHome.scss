@@ -1,9 +1,7 @@
 
 
-@import './../../../../styles/_config';
+@import 'src/styles/_config';
 
-
-  
   [class^="icon-"], [class*=" icon-"] { 
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'vtr-icons', sans-serif !important;
@@ -165,9 +163,24 @@
 
     }
 
+    .slider__promo{
+        button, a{
+            pointer-events: none;
+            // display: none;
+        }
+    }
+    .slick-active{
+        z-index: 1;
+        .slider__promo{
+            // z-index: 1;
+            button, a{
+                pointer-events: initial;
+                // display: inline-block; 
+            }
+        }
 
-    
-
+        
+    }
     
 
 }

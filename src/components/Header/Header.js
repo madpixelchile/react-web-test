@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './header.scss';
 
-export const PrimaryHeaderComponent = ()=>{
+import { NavBar } from './HeaderNavBar';
 
-    return(
+export class PrimaryHeaderComponent extends Component {
 
-        <header className="header header--primary">
-
-            header
-        
-        </header>
-
-    );    
+    render(){
+        return(
+            
+            <header className="header header--primary">
+    
+                header
+    
+                <NavBar/>
+            
+            </header>
+    
+        ); 
+    }   
 
 }

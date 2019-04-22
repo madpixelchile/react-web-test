@@ -1,85 +1,131 @@
 
 
 import React, {Component} from 'react';
+// import { BrowserRouter, Route } from 'react-router-dom';
 
-import ModalExample from "./../../../Modal/Modal";
+import axios from 'axios';
 
-import ExampleTab from "./../../../Tab/Tabs";
+import ModalExample from "src/components/Modal/Modal";
 
-import SimpleSlider from './../../../BaseComponents/Slider/SliderHome/SliderHome';
-import {HomeTenderGrid} from './../../../BaseComponents/HomeTenderGrid/HomeTenderGrid';
+import ExampleTab from "src/components/Tab/Tabs";
 
-import gridSquareTopLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-DK.jpg';
-// import gridSquareTopLeftMobile from './../../../BaseComponents/HomeTenderGrid/img/C01-S10-MB.jpg';
+import SimpleSlider from 'src/components/BaseComponents/Slider/SliderHome/SliderHome';
+import {HomeTenderGrid} from 'src/components/BaseComponents/HomeTenderGrid/HomeTenderGrid';
 
-import gridSquareTopRightImg from './../../../BaseComponents/HomeTenderGrid/img/c02-bandaancha-dk.png';
-import gridSquareBottomLeftImg from './../../../BaseComponents/HomeTenderGrid/img/C03-iPhone6S-DK.png';
-import gridSquareBottomCenterImg from './../../../BaseComponents/HomeTenderGrid/img/c04-negocios2-dk-1.png';
-import gridSquareBottomRightImg from './../../../BaseComponents/HomeTenderGrid/img/C05-GOT-DK.png';
+// import HomeTenderGridData from 'src/components/BaseComponents/HomeTenderGrid/HomeResources.json';
 
 export class PageHomeComponent extends Component{
 
+    constructor(props){
+        super(props);
+
+        this.state = {
+            imgPath: 'src/components/BaseComponents/HomeTenderGrid/img/',
+            homeModuleInfo: []
+
+
+        }
+    }
+
+    componentWillMount() {
+        axios.get('./data/HomeResources.json') // JSON File Path
+        .then( response => {
+            this.setState({
+                homeModuleInfo: response.data
+            });
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+    }
+
+
+
     render(){
-        return(
-            
+
+        const homeModuleInfoLoaded = this.state.homeModuleInfo;
+
+        console.log('without import axios:' + homeModuleInfoLoaded);
+
+        // console.log('with import:' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl);
+
+        return( 
+ 
             <div className="mainContent">
                 
-                <ModalExample modalContent={'ModalDos'}/>
+                <ModalExample modalContent={'ModalDos'} modalStructure={'ModalOnlyText'} buttonText={'Abrir modal sólo texto'}/>
 
                 <SimpleSlider />
                 
-                <div className="container-fluid">
+                {   
+                    //Condicion que pregunta si la variable homeModuleInfoLoaded existe y además está llena muestrame lo siguiente:
+                    homeModuleInfoLoaded && homeModuleInfoLoaded.map(homeModuleInfo => 
+                        (
 
-                    <div className="row small-gutter">
-
-                        <div className="col-md-6">
-                            <HomeTenderGrid 
-                                gridSquareDirection={'homeTenderBox__top homeTenderBox__top--left'} 
-                                gridSquareImg={gridSquareTopLeftImg}
-                                // gridSquareImgMobile={gridSquareTopLeftMobile}
-                                goToUrl={'./'}
-                                TitleUrl={'Enlace a la sección Uno'}
-                            />
-                        </div>
-                        <div className="col-md-6">
-                            <HomeTenderGrid 
-                                gridSquareDirection={'homeTenderBox__top homeTenderBox__top--right'}
-                                gridSquareImg={gridSquareTopRightImg}
-                                goToUrl={'./'}
-                                TitleUrl={'Enlace a la sección Dos'}
-                             />
-                        </div>
-                        <div className="col-lg-five-2 col-md-4 col-xs-12">
-                            <HomeTenderGrid 
-                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
-                                gridSquareImg={gridSquareBottomLeftImg}
-                                goToUrl={'./'}
-                                TitleUrl={'Enlace a la sección Tres'}
-                            />    
-                        </div>
-                        <div className="col-lg-five-1 col-md-4 col-xs-12">
-                            <HomeTenderGrid 
-                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--center'} 
-                                gridSquareImg={gridSquareBottomCenterImg}
-                                goToUrl={'./'}
-                                TitleUrl={'Enlace a la sección Cuatro'}
-                            />    
-                        </div>
-                        <div className="col-lg-five-2 col-md-4 col-xs-12">
-                            <HomeTenderGrid 
-                                gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--right'} 
-                                gridSquareImg={gridSquareBottomRightImg}
-                                goToUrl={'./'}
-                                TitleUrl={'Enlace a la sección Cinco'}
-                            />    
-                        </div>
-
-                    </div>
-
-                </div>
+                            <div className="container-fluid">
+        
+                                <div className="row small-gutter">
+        
+                                    <div className="col-md-6">
+                                        <HomeTenderGrid 
+                                            gridSquareDirection = {'homeTenderBox__top homeTenderBox__top--left'} 
+                                            gridSquareImg       = {require( 'src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.topLeftSquare.DeskImgUrl)} 
+                                            gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/'  + homeModuleInfo.topLeftSquare.MobileImgUrl)}
+                                            gridSquareImgAlt    = {homeModuleInfo.topLeftSquare.MobileImgUrl}
+                                            gridButtonTitle     = {homeModuleInfo.topLeftSquare.LinkTitle}
+                                            goToUrl={'#;'}
+                                        />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <HomeTenderGrid 
+                                            gridSquareDirection = {'homeTenderBox__top homeTenderBox__top--right'}
+                                            gridSquareImg       = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.topRightSquare.DeskImgUrl)}
+                                            gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.topRightSquare.MobileImgUrl)}
+                                            gridSquareImgAlt    = {homeModuleInfo.topRightSquare.MobileImgUrl}
+                                            gridButtonTitle     = {homeModuleInfo.topRightSquare.LinkTitle}
+                                            goToUrl={'#;'}
+                                        />
+                                    </div>
+                                    <div className="col-lg-five-2 col-md-4 col-xs-12">
+                                        <HomeTenderGrid 
+                                            gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--left'} 
+                                            gridSquareImg       = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomLeftSquare.DeskImgUrl)}
+                                            gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomLeftSquare.MobileImgUrl)}
+                                            gridSquareImgAlt    = {homeModuleInfo.bottomLeftSquare.MobileImgUrl}
+                                            gridButtonTitle     = {homeModuleInfo.bottomLeftSquare.LinkTitle}
+                                            goToUrl={'#;'}
+                                        />    
+                                    </div>
+                                    <div className="col-lg-five-1 col-md-4 col-xs-12">
+                                        <HomeTenderGrid 
+                                            gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--center'} 
+                                            gridSquareImg       = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomCenterSquare.DeskImgUrl)}
+                                            gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomCenterSquare.MobileImgUrl)}
+                                            gridSquareImgAlt    = {homeModuleInfo.bottomCenterSquare.MobileImgUrl}
+                                            gridButtonTitle     = {homeModuleInfo.bottomCenterSquare.LinkTitle}
+                                            goToUrl={'#;'}
+                                        />    
+                                    </div>
+                                    <div className="col-lg-five-2 col-md-4 col-xs-12">
+                                        <HomeTenderGrid 
+                                            gridSquareDirection={'homeTenderBox__bottom homeTenderBox__bottom--right'} 
+                                            gridSquareImg       = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomRightSquare.DeskImgUrl)}
+                                            gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.bottomRightSquare.MobileImgUrl)}
+                                            gridSquareImgAlt    = {homeModuleInfo.bottomRightSquare.MobileImgUrl}
+                                            gridButtonTitle     = {homeModuleInfo.bottomRightSquare.LinkTitle}
+                                            goToUrl={'#;'}
+                                        />    
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+                            )
+                    )
+                }
                 
-    
-                <ModalExample modalContent={'ModalUno'} classToToggle={'active'}/>
+                <ModalExample modalContent={'ModalUno'} classToToggle={'active'} buttonText={'Abrir modal C2C'} modalStructure={'ModalClickToCall'}/>
 
                 <ExampleTab classToToggle={'show'}/>
 
