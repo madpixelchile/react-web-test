@@ -74,6 +74,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Installed packages & first call 
 
+
+### .env
+
+`.env` Archive added at the root of the project, this archive is for change `react` import url to relative or absolute.<br>
+Example: https://medium.com/@ktruong008/absolute-imports-with-create-react-app-4338fbca7e3d
+
 ### React router dom
 
 This is for react url path navigation.<br>
