@@ -77,23 +77,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### React router dom
 
 This is for react url path navigation
+Documentation:
+https://reacttraining.com/react-router/core/guides/philosophy
 
 `yarn add react-router-dom`
 
 ### React AXIOS
 
 This is for load external resources like JSON archives
+Documentation:
+https://appdividend.com/2018/05/30/react-axios-tutorial-example-from-scratch/
 
 `yarn add axios`
 
 ### React Slick
 
-This is classic Slick slider plugin ported react version
+This is classic Slick slider plugin ported to react version
+Documentation:
+https://react-slick.neostack.com/
 
 `yarn add react-slick`
 
 ### Node SASS Chokidar
 
 This is for develop project with SASS css
+Documentation:
+https://www.npmjs.com/package/node-sass-chokidar
 
 `yarn add node-sass-chokidar`
+
+### Bootstrap Module
+
+This is for use bootsrap inside the project
+Documentation:
+https://reactstrap.github.io/
+
+`yarn add reactstrap`
