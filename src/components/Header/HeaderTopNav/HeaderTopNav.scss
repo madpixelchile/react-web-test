@@ -1,0 +1,10 @@
+@import 'src/styles/config';
+
+.topNav {
+    background: #444;
+    &__core {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

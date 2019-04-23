@@ -4,6 +4,8 @@ import './header.scss';
 
 import { NavBar } from './HeaderNavBar';
 
+import { TopNavComponent } from './HeaderTopNav'
+
 export class PrimaryHeaderComponent extends Component {
 
     render(){
@@ -11,7 +13,7 @@ export class PrimaryHeaderComponent extends Component {
             
             <header className="header header--primary">
     
-                header
+                <TopNavComponent/>
     
                 <NavBar/>
             
