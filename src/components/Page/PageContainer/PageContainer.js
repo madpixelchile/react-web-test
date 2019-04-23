@@ -1,11 +1,9 @@
-
-
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom';
 
-import { 
-    PageHomeComponent, 
-    PagePacksComponent,
+import {
+  PageHomeComponent,
+  PagePacksComponent,
 
 } from '../';
 
@@ -14,8 +12,9 @@ export class Container extends Component {
     return (
       <div>
         <Switch>
-            <Route path='/home' component={PageHomeComponent}/>
-            <Route path='/personas/packs' component={PagePacksComponent}/>
+          {/* <Route component={PageHomeComponent} /> */}
+          <Route path='/home' component={PageHomeComponent} />
+          <Route path='/personas/packs' component={PagePacksComponent} />
         </Switch>
       </div>
     );
