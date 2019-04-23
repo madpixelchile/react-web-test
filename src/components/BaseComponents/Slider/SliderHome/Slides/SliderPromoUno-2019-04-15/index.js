@@ -31,7 +31,7 @@ const SliderPromoUno = () => {
                                 
                                 <img className="product only-md" src={ProductImgMobile} alt="Producto"/>
 
-                                <a href="#;" id="1" className="btn btn--primary" title="Enlace a...">¡Lo quiero 1!</a>
+                                <a href="/personas/packs" id="1" className="btn btn--primary" title="Enlace a...">¡Lo quiero 1!</a>
 
                             </div>
 

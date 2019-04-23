@@ -70,3 +70,30 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## Installed packages & first call 
+
+### React router dom
+
+This is for react url path navigation
+
+`yarn add react-router-dom`
+
+### React AXIOS
+
+This is for load external resources like JSON archives
+
+`yarn add axios`
+
+### React Slick
+
+This is classic Slick slider plugin ported react version
+
+`yarn add react-slick`
+
+### Node SASS Chokidar
+
+This is for develop project with SASS css
+
+`yarn add node-sass-chokidar`
