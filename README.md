@@ -76,7 +76,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### React router dom
 
-This is for react url path navigation
+This is for react url path navigation.<br>
 Documentation:
 https://reacttraining.com/react-router/core/guides/philosophy
 
@@ -84,7 +84,7 @@ https://reacttraining.com/react-router/core/guides/philosophy
 
 ### React AXIOS
 
-This is for load external resources like JSON archives
+This is for load external resources like JSON archives.<br>
 Documentation:
 https://appdividend.com/2018/05/30/react-axios-tutorial-example-from-scratch/
 
@@ -92,7 +92,7 @@ https://appdividend.com/2018/05/30/react-axios-tutorial-example-from-scratch/
 
 ### React Slick
 
-This is classic Slick slider plugin ported to react version
+This is classic Slick slider plugin ported to react version.<br>
 Documentation:
 https://react-slick.neostack.com/
 
@@ -100,7 +100,7 @@ https://react-slick.neostack.com/
 
 ### Node SASS Chokidar
 
-This is for develop project with SASS css
+This is for develop project with SASS css.<br>
 Documentation:
 https://www.npmjs.com/package/node-sass-chokidar
 
@@ -108,7 +108,7 @@ https://www.npmjs.com/package/node-sass-chokidar
 
 ### Bootstrap Module
 
-This is for use bootsrap inside the project
+This is for use bootsrap inside the project.<br>
 Documentation:
 https://reactstrap.github.io/
 
