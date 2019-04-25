@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Button, Modal } from 'reactstrap';
 import 'src/styles/_modal.scss'
 
-import PostDataLoad from 'src/components/BaseComponents/Data/PostData.json'
+// import PostDataLoad from 'src/components/BaseComponents/Data/PostData.json'
 
 import {ModalOnlyText} from './Modals/OnlyText/';
 import {ModalClickToCall} from './Modals/ClickToCall/';
@@ -39,16 +39,16 @@ class ModalExample extends Component {
 
     render() {
        
-        const currentModal = PostDataLoad.filter((modal) => 
-    { 
-        return (this.state.bringModalContent === modal.type ? modal : "")
-    })  
+    //     const currentModal = PostDataLoad.filter((modal) => 
+    // { 
+    //     return (this.state.bringModalContent === modal.type ? modal : "")
+    // })  
 
         const isModalStructure = this.state.bringModalStructure;
         const withoutStrcuture = 'Not structure asigned here.';
 
         return (
-            console.log(currentModal),
+            // console.log(currentModal),
 
             <div>
 

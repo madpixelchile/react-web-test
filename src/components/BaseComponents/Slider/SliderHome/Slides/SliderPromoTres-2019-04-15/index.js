@@ -32,7 +32,7 @@ class SliderPromoTres extends Component{
 
     render(){
 
-        console.log(this.state.stateOne); // console log test here, because in same function of change doesn't works... i don't know why :(
+        //console.log(this.state.stateOne); // console log test here, because in same function of change doesn't works... i don't know why :(
 
         return(
 

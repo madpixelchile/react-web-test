@@ -37,7 +37,6 @@ export class PageHomeComponent extends Component{
         .catch(function (error) {
             console.log(error);
         });
-
     }
 
 

@@ -34,7 +34,7 @@ class SliderPromoDos extends Component{
     
         render(){
 
-            console.log(this.state.stateOne);
+            // console.log(this.state.stateOne);
     
             return(
     
