@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react';
 
+import {FlowBoxComponent} from './FlowBoxComponent/';
 
 export class PagePlaygroundComponent extends Component{
 
@@ -9,7 +10,9 @@ export class PagePlaygroundComponent extends Component{
 
             <div>
 
-                <h1>This is a playground page</h1>
+                <h5>This is a playground page</h5>
+
+                <FlowBoxComponent/>
 
             </div>
 

@@ -10,5 +10,11 @@ export {
     PageHomeComponent,           //Home personas
     PagePacksComponent,          //Personas / Packs PLP 
     PageError404Component,       //Error 404
-    PagePlaygroundComponent,
+
+
+
+
+
+    
+    PagePlaygroundComponent,     //Playground...
 };

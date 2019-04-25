@@ -1,0 +1,27 @@
+
+
+
+
+.FlowBox{
+    max-width: 450px;
+    margin: 0 auto;
+    background: #ccc;
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    .boxWrap{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box{
+        display: none;
+
+        &.active{
+            display: block;
+        }
+    }
+
+}
