@@ -1,0 +1,40 @@
+
+@import 'src/styles/config.scss';
+
+.loginArea{
+    
+    .deployButton{
+        display: inline-block;
+        padding: 10px 40px;
+        background: $color-primary;
+        position: relative;
+    }
+
+    .deployArea{
+        overflow: hidden;
+        right: 10px;
+        z-index: 1;
+        position: absolute;
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 300px;
+        background: $color-bg;
+
+        transition: opacity 300ms ease, visibility 300ms ease, max-height 1000ms ease;
+    }
+
+    &.active{
+
+        .deployArea{
+            max-height: 500px;
+            opacity: 1;
+            visibility: visible;
+
+            transition: opacity 300ms ease, visibility 300ms ease, max-height 1000ms ease;
+        }
+        
+    }
+
+}
+

@@ -6,6 +6,7 @@ import PostDataLoad from 'src/components/BaseComponents/Data/PostData.json'
 
 import {ModalOnlyText} from './Modals/OnlyText/';
 import {ModalClickToCall} from './Modals/ClickToCall/';
+import ModalSlider from './Modals/TypeSlider/';
 
 class ModalExample extends Component {
     constructor(props) {
@@ -71,6 +72,8 @@ class ModalExample extends Component {
                                 return <ModalOnlyText />;
                             case 'ModalClickToCall':
                                 return <ModalClickToCall />;
+                            case 'ModalSlider':
+                            return <ModalSlider />
                             default:
                                 return withoutStrcuture;
                             }

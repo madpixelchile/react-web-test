@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {HeaderAccessComponent} from './../HeaderAccess/';
+import {HeaderUserAccessComponent} from './../HeaderUserAccess/';
 import {HeaderAreaButtons} from './../HeaderAreaButtons/'
 
 import './HeaderTopNav.scss';
@@ -14,7 +14,7 @@ export const TopNavComponent = ()=>{
                     <div className="col-xs-12">
                         <div className="topNav__core">
                             <HeaderAreaButtons />
-                            <HeaderAccessComponent />
+                            <HeaderUserAccessComponent />
                         </div>
                     </div>
                 </div>

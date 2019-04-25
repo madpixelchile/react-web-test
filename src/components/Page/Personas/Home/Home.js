@@ -45,8 +45,9 @@ export class PageHomeComponent extends Component{
     render(){
 
         const homeModuleInfoLoaded = this.state.homeModuleInfo;
+        // const imgGridPath = 'src/components/BaseComponents/HomeTenderGrid/img/';
 
-        console.log('without import axios:' + homeModuleInfoLoaded);
+        // console.log('without import axios:' + homeModuleInfoLoaded);
 
         // console.log('with import:' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl);
 
@@ -68,7 +69,7 @@ export class PageHomeComponent extends Component{
                                 <div className="row small-gutter">
         
                                     <div className="col-md-6">
-                                        <HomeTenderGrid 
+                                        <HomeTenderGrid
                                             gridSquareDirection = {'homeTenderBox__top homeTenderBox__top--left'} 
                                             gridSquareImg       = {require( 'src/components/BaseComponents/HomeTenderGrid/img/' + homeModuleInfo.topLeftSquare.DeskImgUrl)} 
                                             gridSquareImgMobile = {require('src/components/BaseComponents/HomeTenderGrid/img/'  + homeModuleInfo.topLeftSquare.MobileImgUrl)}
@@ -126,6 +127,8 @@ export class PageHomeComponent extends Component{
                 }
                 
                 <ModalExample modalContent={'ModalUno'} classToToggle={'active'} buttonText={'Abrir modal C2C'} modalStructure={'ModalClickToCall'}/>
+
+                <ModalExample modalStructure={'ModalSlider'} buttonText={'Abrir modal con slider'}/>
 
                 <ExampleTab classToToggle={'show'}/>
 
