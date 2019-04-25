@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 
 import {PagoExpressComponent} from './PagoExpressArea';
-import {LoginComponent} from './LoginArea';
+import LoginComponent from './LoginArea';
 
 import './HeaderUserAccessComponent.scss'
 

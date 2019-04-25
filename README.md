@@ -119,3 +119,11 @@ Documentation:
 https://reactstrap.github.io/
 
 `yarn add reactstrap`
+
+### React On click outside
+
+This is the short way to make click outside component events.<br>
+Documentation:
+https://www.npmjs.com/package/react-onclickoutside
+
+`react-onclickoutside`

@@ -46,9 +46,7 @@ export class PageHomeComponent extends Component{
 
         const homeModuleInfoLoaded = this.state.homeModuleInfo;
         // const imgGridPath = 'src/components/BaseComponents/HomeTenderGrid/img/';
-
         // console.log('without import axios:' + homeModuleInfoLoaded);
-
         // console.log('with import:' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl);
 
         return( 
@@ -57,7 +55,7 @@ export class PageHomeComponent extends Component{
                 
                 <ModalExample modalContent={'ModalDos'} modalStructure={'ModalOnlyText'} buttonText={'Abrir modal sólo texto'}/>
 
-                <SimpleSlider />
+                <SimpleSlider/>
                 
                 {   
                     //Condicion que pregunta si la variable homeModuleInfoLoaded existe y además está llena muestrame lo siguiente:

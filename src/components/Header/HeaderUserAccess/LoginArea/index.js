@@ -1,9 +1,11 @@
 
 import React, {Component} from 'react';
 
+import onClickOutside from "react-onclickoutside";
+
 import './LoginArea.scss'
 
-export class LoginComponent extends Component{
+class LoginComponent extends Component{
 
     constructor(props){
         super(props);
@@ -15,21 +17,17 @@ export class LoginComponent extends Component{
     }
 
     toggleDeployAction = (e) =>{
-        
-        // if(this.node.contains(e.target)){ 
-            this.setState({
-                toggleDeploy: !this.state.toggleDeploy,
-            });
-        // }
-
-        // this.toggleDeployClose();
+        this.setState({
+            toggleDeploy: !this.state.toggleDeploy,
+        });
     }
 
-    // toggleDeployClose(e){
-    //     this.setState({
-    //         toggleDeploy: false,
-    //     });
-    // }
+    handleClickOutside = e => {
+        this.setState({
+            toggleDeploy: false,
+        });
+    };
+
 
     render(){
 
@@ -59,3 +57,6 @@ export class LoginComponent extends Component{
     }
 
 }
+
+
+export default onClickOutside(LoginComponent);
