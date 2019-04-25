@@ -93,6 +93,11 @@ https://reacttraining.com/react-router/core/guides/philosophy
 This is for load external resources like JSON archives.<br>
 Documentation:
 https://appdividend.com/2018/05/30/react-axios-tutorial-example-from-scratch/
+<br>
+Axios issues (if you install others packages Axios module maybe will broke)
+FIX: remove axios and install again<br>
+https://github.com/js-data/js-data-http/issues/42 
+
 
 `yarn add axios`
 
