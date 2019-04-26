@@ -58,10 +58,10 @@ export class PageHomeComponent extends Component{
                 
                 {   
                     //Condicion que pregunta si la variable homeModuleInfoLoaded existe y además está llena muestrame lo siguiente:
-                    homeModuleInfoLoaded && homeModuleInfoLoaded.map(homeModuleInfo => 
+                    homeModuleInfoLoaded && homeModuleInfoLoaded.map((homeModuleInfo, index) => 
                         (
 
-                            <div className="container-fluid">
+                            <div key={index} className="container-fluid">
         
                                 <div className="row small-gutter">
         
