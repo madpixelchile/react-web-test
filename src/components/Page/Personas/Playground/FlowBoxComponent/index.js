@@ -2,6 +2,12 @@
 
 import React, {Component, } from 'react'; //ReactDOM
 
+import axios from 'axios';
+
+
+import {FlowBoxStructure, } from './FlowBoxStructure';
+
+
 import './FlowBoxComponent.scss'
 
 export class FlowBoxComponent extends Component{
@@ -13,10 +19,23 @@ export class FlowBoxComponent extends Component{
             pageNumber: 0,
             baseNumber: [],
             activeState: '',
+            flowBoxInfo: [],
         }
 
-        
+        this.FlowBoxStructure = React.createRef();
 
+    }
+
+    componentWillMount() {
+        axios.get('./data/PlayGroundData.json') // JSON File Path
+        .then( response => {
+            this.setState({
+                flowBoxInfo: response.data
+            });
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     nextPage = () =>{
@@ -25,8 +44,12 @@ export class FlowBoxComponent extends Component{
                 pageNumber: this.state.pageNumber + 1,
                 
             });
+
+            this.FlowBoxStructure.current.updateState();
+
         }
         this.toggleClass();
+
     }
 
     prevPage = () =>{
@@ -34,69 +57,37 @@ export class FlowBoxComponent extends Component{
             this.setState({
                 pageNumber: this.state.pageNumber - 1,
             });
+
+            this.FlowBoxStructure.current.updateState();
         }
 
         this.toggleClass();
     }
 
     toggleClass = ()=>{
-        //sdfsd
+        
     }
 
 
     render(){
+
+        const flowBoxContentLoaded = this.state.flowBoxInfo;
+
+        // flowBoxContentLoaded.map(flowBoxInfo, index) => (
+        //     // <FlowBoxStructure title={flowBoxContentLoaded.title} />
+        //     console.log(flowBoxContentLoaded)
+        // )
+
         return(
             <div className="FlowBox">
                 <h4>Flowbox {this.state.pageNumber}</h4>
-                    
-                        <div className="boxWrap">
 
-                            <div className={`box box-1 active`}>
-                                <p>
-                                    <strong>{this.state.pageNumber}</strong>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
+                {
+                    flowBoxContentLoaded && flowBoxContentLoaded.map((flowBoxInfo, i)=>(
+                        <FlowBoxStructure ref={this.FlowBoxStructure} itemPageCounter={this.state.pageNumber} itemNumberIndex={i} classType={`box box-${i}`} key={i} title={flowBoxInfo.title} content={flowBoxInfo.info} />
+                    ))
+                }
 
-                            <div className={`box box-2`}>
-                                <strong>{this.state.pageNumber}</strong>
-                                <p>
-                                    n
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-
-                            <div className={`box box-3`}>
-                                <strong>{this.state.pageNumber}</strong>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi
-                                </p>
-                            </div>
-
-                            <div className={`box box-4`}>
-                                <strong>{this.state.pageNumber}</strong>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                    Ut enim adillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-
-                        </div>
-    
                 <button onClick={this.prevPage}> Page Number Prev </button>
                 <button onClick={this.nextPage}> Page Number Next </button>
             </div>
