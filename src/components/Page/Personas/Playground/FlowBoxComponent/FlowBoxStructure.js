@@ -15,12 +15,12 @@ export class FlowBoxStructure extends Component{
             itemNumber: this.props.itemNumberIndex,
         }
 
-        console.log(this.state.itemNumber);
+        // console.log(this.state.itemNumber);
 
     }
 
     render(){
-        console.log('entra funcion interna:' + this.props.itemPageCounter);
+        // console.log('entra funcion interna:' + this.props.itemPageCounter);
         return(
 
             <div className={`infoArea ${this.state.ContentClass} ${this.state.itemNumber === this.props.itemPageCounter ? 'active' : ''}`}>

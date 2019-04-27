@@ -43,8 +43,6 @@ export class FlowBoxComponent extends Component{
             });
 
         }
-        this.toggleClass();
-
     }
 
     prevPage = () =>{
@@ -54,23 +52,11 @@ export class FlowBoxComponent extends Component{
             });
 
         }
-
-        this.toggleClass();
     }
-
-    toggleClass = ()=>{
-        
-    }
-
 
     render(){
 
         const flowBoxContentLoaded = this.state.flowBoxInfo;
-
-        // flowBoxContentLoaded.map(flowBoxInfo, index) => (
-        //     // <FlowBoxStructure title={flowBoxContentLoaded.title} />
-        //     console.log(flowBoxContentLoaded)
-        // )
 
         return(
             <div className="FlowBox">
@@ -82,8 +68,10 @@ export class FlowBoxComponent extends Component{
                     ))
                 }
 
-                <button onClick={this.prevPage}> Page Number Prev </button>
-                <button onClick={this.nextPage}> Page Number Next </button>
+               <div className="buttonArea">
+                    <button onClick={this.prevPage}> Page Number Prev </button>
+                    <button onClick={this.nextPage}> Page Number Next </button>
+               </div>
             </div>
         )
     }
