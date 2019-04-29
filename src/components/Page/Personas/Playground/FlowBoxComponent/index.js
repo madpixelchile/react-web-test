@@ -22,8 +22,6 @@ export class FlowBoxComponent extends Component{
             flowBoxInfo: [],
         }
 
-        this.FlowBoxStructure = React.createRef();
-
     }
 
     componentWillMount() {
@@ -36,20 +34,16 @@ export class FlowBoxComponent extends Component{
         .catch(function (error) {
             console.log(error);
         });
+
     }
 
     nextPage = () =>{
-        if(this.state.pageNumber < 5){
+        if(this.state.pageNumber < 4){
             this.setState({
                 pageNumber: this.state.pageNumber + 1,
-                
             });
 
-            this.FlowBoxStructure.current.updateState();
-
         }
-        this.toggleClass();
-
     }
 
     prevPage = () =>{
@@ -58,16 +52,8 @@ export class FlowBoxComponent extends Component{
                 pageNumber: this.state.pageNumber - 1,
             });
 
-            this.FlowBoxStructure.current.updateState();
         }
-
-        this.toggleClass();
     }
-
-    toggleClass = ()=>{
-        
-    }
-
 
     render(){
 
@@ -79,12 +65,14 @@ export class FlowBoxComponent extends Component{
 
                 {
                     flowBoxContentLoaded && flowBoxContentLoaded.map((flowBoxInfo, i)=>(
-                        <FlowBoxStructure ref={this.FlowBoxStructure} itemPageCounter={this.state.pageNumber} itemNumberIndex={i} classType={`box box-${i}`} key={i} title={flowBoxInfo.title} content={flowBoxInfo.info} />
+                        <FlowBoxStructure itemPageCounter={this.state.pageNumber} itemNumberIndex={i} classType={`box box-${i}`} key={i} title={flowBoxInfo.title} content={flowBoxInfo.info} />
                     ))
                 }
 
-                <button onClick={this.prevPage}> Page Number Prev </button>
-                <button onClick={this.nextPage}> Page Number Next </button>
+               <div className="buttonArea">
+                    <button onClick={this.prevPage}> Page Number Prev </button>
+                    <button onClick={this.nextPage}> Page Number Next </button>
+               </div>
             </div>
         )
     }

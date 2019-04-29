@@ -1,0 +1,52 @@
+
+
+[
+    {
+        "Nombre": "Martha",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    },
+    {
+        "Nombre": "Edgar",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    },
+    {
+        "Nombre": "Laura",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    },
+    {
+        "Nombre": "María",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    },
+    {
+        "Nombre": "Pamela",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    },
+    {
+        "Nombre": "Verónica",
+        "Datos": {
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Color": "Blanco"
+        }
+    }
+]
