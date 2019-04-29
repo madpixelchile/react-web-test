@@ -16,7 +16,7 @@ export class FlowBoxStructure extends Component{
             itemPageCounterNumber: 1,
         }
 
-        console.log(this.state.itemNumber);
+        console.log('toke:' + this.state.itemNumber);
 
     }
     

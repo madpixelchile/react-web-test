@@ -73,11 +73,6 @@ export class FlowBoxComponent extends Component{
 
         const flowBoxContentLoaded = this.state.flowBoxInfo;
 
-        // flowBoxContentLoaded.map(flowBoxInfo, index) => (
-        //     // <FlowBoxStructure title={flowBoxContentLoaded.title} />
-        //     console.log(flowBoxContentLoaded)
-        // )
-
         return(
             <div className="FlowBox">
                 <h4>Flowbox {this.state.pageNumber}</h4>
