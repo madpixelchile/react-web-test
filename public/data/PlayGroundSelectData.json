@@ -2,51 +2,66 @@
 
 [
     {
-        "Nombre": "Martha",
         "Datos": {
+            "Nombre": "jana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
         }
     },
     {
-        "Nombre": "Edgar",
         "Datos": {
-            "Edad": "26",
+            "Nombre": "jaira",
+            "Edad": "28",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
         }
     },
     {
-        "Nombre": "Laura",
         "Datos": {
-            "Edad": "26",
+            "Nombre": "Romina",
+            "Edad": "20",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
         }
     },
     {
-        "Nombre": "María",
         "Datos": {
-            "Edad": "26",
+            "Nombre": "Martha",
+            "Edad": "30",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
         }
     },
     {
-        "Nombre": "Pamela",
         "Datos": {
+            "Nombre": "Ana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
         }
     },
     {
-        "Nombre": "Verónica",
         "Datos": {
-            "Edad": "26",
+            "Nombre": "Mathilda",
+            "Edad": "21",
             "Sexo": "Femenino",
-            "Color": "Blanco"
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
         }
     }
 ]

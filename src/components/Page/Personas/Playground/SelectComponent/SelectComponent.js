@@ -54,7 +54,8 @@ export class SelectComponent extends Component{
 
                     {
                         SelectComponentInfoLoaded && SelectComponentInfoLoaded.map((SelectComponentInfo, i) =>(
-                                <option value={SelectComponentInfo.Nombre} key={i}>{SelectComponentInfo.Nombre}</option>
+                                <option value={SelectComponentInfo.Datos.Nombre} key={i}>{SelectComponentInfo.Datos.Nombre}</option>
+                                // <option value={SelectComponentInfo.Datos.Juegos.Grupo} key={i}>{SelectComponentInfo.Datos.Juegos.Grupo}</option>
                             )
                         )
                     } 
@@ -64,7 +65,7 @@ export class SelectComponent extends Component{
                 <select>
                     {
                         SelectComponentInfoLoaded && SelectComponentInfoLoaded.map((SelectComponentInfo, i) =>(
-                                <option value={SelectComponentInfo.Nombre} key={i}>{SelectComponentInfo.Nombre}</option>
+                                <option value={SelectComponentInfo["Datos"].Nombre} key={i}>{SelectComponentInfo["Datos"].Nombre}</option>
                             )
                         )
                     } 
