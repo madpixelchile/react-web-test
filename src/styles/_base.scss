@@ -376,4 +376,8 @@ html {
   }
 
 
-  
+  .toke{
+    &.hidden-element{
+      display: none;
+    }
+  }

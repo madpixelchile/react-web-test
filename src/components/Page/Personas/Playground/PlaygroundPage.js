@@ -9,6 +9,8 @@ import {SelectComponent} from './SelectComponent/SelectComponent';
 
 import {LoadWithFetchComponent} from './loadWithFetch/loadWithFetch';
 
+import {LoadWithFetchTwo} from './loadWIthFetchTwo/';
+
 
 export class PagePlaygroundComponent extends Component{
 
@@ -33,6 +35,8 @@ export class PagePlaygroundComponent extends Component{
 
                     <LoadWithFetchComponent/>
 
+
+                    <LoadWithFetchTwo />
 
                 </div>
 

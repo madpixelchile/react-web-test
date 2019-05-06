@@ -21,7 +21,7 @@ export class PageHomeComponent extends Component{
 
         this.state = {
             imgPath: 'src/components/BaseComponents/HomeTenderGrid/img/',
-            homeModuleInfo: []
+            homeModuleInfo: [],
         }
 
         axios.get('./data/HomeResources.json') // JSON File Path
@@ -43,9 +43,6 @@ export class PageHomeComponent extends Component{
     render(){
 
         const homeModuleInfoLoaded = this.state.homeModuleInfo;
-        // const imgGridPath = 'src/components/BaseComponents/HomeTenderGrid/img/';
-        // console.log('without import axios:' + homeModuleInfoLoaded);
-        // console.log('with import:' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl);
 
         return( 
  
@@ -58,7 +55,7 @@ export class PageHomeComponent extends Component{
                 {   
                     //Condicion que pregunta si la variable homeModuleInfoLoaded existe y además está llena muestrame lo siguiente:
                     // homeModuleInfoLoaded && homeModuleInfoLoaded.map((homeModuleInfo, index) => 
-
+                    
                     homeModuleInfoLoaded.map((homeModuleInfo, index) => 
                         (
 
