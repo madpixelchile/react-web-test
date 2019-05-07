@@ -10,14 +10,15 @@ export class SelectComponent extends Component{
         super(props);
 
         this.state = {
-            SelectComponentInfo: [],
+            SelectComponentInfo: null,
             selectValue: '',
+            nodeInitialState: 0,
         }
 
     }
 
 
-    componentWillMount() {
+    componentDidMount() {
         axios.get('./data/PlayGroundSelectData.json') // JSON File Path
         .then( response => {
             this.setState({
@@ -31,21 +32,16 @@ export class SelectComponent extends Component{
 
     loadSelectResults = (e)=>{
         this.setState({
-            
             selectValue: e.target.value,
-
+            nodeInitialState: e.target.value,
         });
     }
 
     render(){
 
-        
-
-        console.log(this.state.selectValue);
+        // console.log(this.state.selectValue);
         
         const SelectComponentInfoLoaded = this.state.SelectComponentInfo;
-
-        // const PrimarySelectedValue = this.state.selectValue;
 
         return(
 
@@ -53,9 +49,8 @@ export class SelectComponent extends Component{
                 <select value={this.state.selectValue} onChange={this.loadSelectResults} >
 
                     {
-                        SelectComponentInfoLoaded && SelectComponentInfoLoaded.map((SelectComponentInfo, i) =>(
-                                <option value={SelectComponentInfo.Datos.Nombre} key={i}>{SelectComponentInfo.Datos.Nombre}</option>
-                                // <option value={SelectComponentInfo.Datos.Juegos.Grupo} key={i}>{SelectComponentInfo.Datos.Juegos.Grupo}</option>
+                        SelectComponentInfoLoaded && SelectComponentInfoLoaded.map((obj, i) =>(
+                                <option value={i} key={i}>{obj.Datos.Nombre}</option>
                             )
                         )
                     } 
@@ -63,12 +58,14 @@ export class SelectComponent extends Component{
                 </select>
                 
                 <select>
+                       
                     {
-                        SelectComponentInfoLoaded && SelectComponentInfoLoaded.map((SelectComponentInfo, i) =>(
-                                <option value={SelectComponentInfo["Datos"].Nombre} key={i}>{SelectComponentInfo["Datos"].Nombre}</option>
-                            )
-                        )
-                    } 
+                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[`${this.state.nodeInitialState}`].Datos.Juegos.Grupo.map((obj,i)=>(
+                            <option key={i}>{obj}</option> 
+                        ))
+                        : ''
+                    }
+                        
                 </select>
 
             </div>
