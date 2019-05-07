@@ -1,0 +1,67 @@
+
+
+[
+    {
+        "Datos": {
+            "Nombre": "jana",
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
+        }
+    },
+    {
+        "Datos": {
+            "Nombre": "jaira",
+            "Edad": "28",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
+        }
+    },
+    {
+        "Datos": {
+            "Nombre": "Romina",
+            "Edad": "20",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+            
+        }
+    },
+    {
+        "Datos": {
+            "Nombre": "Martha",
+            "Edad": "30",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+        }
+    },
+    {
+        "Datos": {
+            "Nombre": "Ana",
+            "Edad": "26",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+        }
+    },
+    {
+        "Datos": {
+            "Nombre": "Mathilda",
+            "Edad": "21",
+            "Sexo": "Femenino",
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            }
+        }
+    }
+]

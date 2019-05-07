@@ -21,13 +21,9 @@ export class PageHomeComponent extends Component{
 
         this.state = {
             imgPath: 'src/components/BaseComponents/HomeTenderGrid/img/',
-            homeModuleInfo: []
-
-
+            homeModuleInfo: [],
         }
-    }
 
-    componentWillMount() {
         axios.get('./data/HomeResources.json') // JSON File Path
         .then( response => {
             this.setState({
@@ -37,16 +33,16 @@ export class PageHomeComponent extends Component{
         .catch(function (error) {
             console.log(error);
         });
+
     }
 
-
+    // componentWillMount() {
+        //Deprecated
+    // }
 
     render(){
 
         const homeModuleInfoLoaded = this.state.homeModuleInfo;
-        // const imgGridPath = 'src/components/BaseComponents/HomeTenderGrid/img/';
-        // console.log('without import axios:' + homeModuleInfoLoaded);
-        // console.log('with import:' + HomeTenderGridData[0].topLeftSquare.DeskImgUrl);
 
         return( 
  
@@ -58,7 +54,9 @@ export class PageHomeComponent extends Component{
                 
                 {   
                     //Condicion que pregunta si la variable homeModuleInfoLoaded existe y además está llena muestrame lo siguiente:
-                    homeModuleInfoLoaded && homeModuleInfoLoaded.map((homeModuleInfo, index) => 
+                    // homeModuleInfoLoaded && homeModuleInfoLoaded.map((homeModuleInfo, index) => 
+                    
+                    homeModuleInfoLoaded.map((homeModuleInfo, index) => 
                         (
 
                             <div key={index} className="container-fluid">
@@ -119,8 +117,7 @@ export class PageHomeComponent extends Component{
                                 </div>
         
                             </div>
-                            )
-                    )
+                        ))
                 }
                 
                 <ModalExample modalContent={'ModalUno'} classToToggle={'active'} buttonText={'Abrir modal C2C'} modalStructure={'ModalClickToCall'}/>
