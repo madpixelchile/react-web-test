@@ -3,16 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Description" content="Description VTR React.">
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>VTR</title>
+    <!--  -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="React VTR">
+    <meta name="apple-mobile-web-app-title" content="React VTR">
+    <meta name="theme-color" content="#FF4063">
+    <meta name="msapplication-navbutton-color" content="#FF4063">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/x-icon" sizes="64x64 32x32 24x24 16x16" href="favicon.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="64x64 32x32 24x24 16x16" href="favicon.png">
+    <!--  -->
   </head>
   <body>
     <noscript>Necesitas tener activado el Javascript para iniciar esta aplicación Web</noscript>
     <div id="root"></div>
+
+    <script>
+    // Check that service workers are registered
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        console.log('Hello from service-worker.js');
+        navigator.serviceWorker.register('%PUBLIC_URL%/sw.js');
+      });
+    }
+    </script>
   </body>
 </html>
