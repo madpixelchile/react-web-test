@@ -29,13 +29,13 @@
 
     <script>
     // Check that service workers are registered
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        console.log('Hello from service-worker.js');
-        navigator.serviceWorker.register('%PUBLIC_URL%/sw.js');
-      });
-    }
+    // if ('serviceWorker' in navigator) {
+    //   // Use the window load event to keep the page load performant
+    //   window.addEventListener('load', () => {
+    //     console.log('Hello from service-worker.js');
+    //     navigator.serviceWorker.register('%PUBLIC_URL%/sw.js');
+    //   });
+    // }
     </script>
   </body>
 </html>
