@@ -381,3 +381,10 @@ html {
       display: none;
     }
   }
+
+  .loading{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
