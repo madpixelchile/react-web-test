@@ -6,9 +6,11 @@
             "Nombre": "jana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["toke1","toke2","toke3","toke4","toke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
             
         }
     },
@@ -17,9 +19,11 @@
             "Nombre": "jaira",
             "Edad": "28",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["tok","toke","tke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
             
         }
     },
@@ -28,9 +32,11 @@
             "Nombre": "Romina",
             "Edad": "20",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["to1","te2","tke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
             
         }
     },
@@ -39,9 +45,12 @@
             "Nombre": "Martha",
             "Edad": "30",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["toke1","toke2","toke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
+            
         }
     },
     {
@@ -49,9 +58,11 @@
             "Nombre": "Ana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["toke1","toke2","toke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
         }
     },
     {
@@ -59,9 +70,11 @@
             "Nombre": "Mathilda",
             "Edad": "21",
             "Sexo": "Femenino",
-            "Juegos": { 
-                "Grupo":  ["toke1","toke2","toke3"]
-            }
+            "Consolas": 
+                {
+                    "PS4": [ "resident evil", "horizon zero down"],
+                    "PS5": [ "Fobia", "MK12"]
+                }
         }
     }
 ]

@@ -19,6 +19,8 @@ export class SelectComponent extends Component{
 
 
     componentDidMount() {
+
+
         axios.get('./data/PlayGroundSelectData.json') // JSON File Path
         .then( response => {
             this.setState({
@@ -60,7 +62,7 @@ export class SelectComponent extends Component{
                 <select>
                        
                     {
-                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[`${this.state.nodeInitialState}`].Datos.Juegos.Grupo.map((obj,i)=>(
+                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[`${this.state.nodeInitialState}`].Datos.Consolas.PS4.map((obj,i)=>(
                             <option key={i}>{obj}</option> 
                         ))
                         : ''
