@@ -6,11 +6,30 @@
             "Nombre": "jana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["tokedafsfdsa1","tokdsfe2","toke3"]
+            },
+            "TipoConsola": ["PS3","PS4","PS5"],
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "consola": [
+                        "Juego ps3 1",
+                        "Juego ps3 2"
+                    ]
+                },
+                {
+                    "consola": [
+                        "Juego ps4 1",
+                        "Juego ps4 2"
+                    ]
+                },
+                {
+                    "consola": [
+                        "Juego ps5 1",
+                        "Juego ps5 2"
+                    ]
                 }
+            ]
             
         }
     },
@@ -19,11 +38,23 @@
             "Nombre": "jaira",
             "Edad": "28",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            },
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "ps4": [
+                        "Airt1",
+                        "Airt2"
+                    ]
+                },
+                {
+                    "ps5": [
+                        "AIRT1",
+                        "AIRT2"
+                    ]
                 }
+            ]
             
         }
     },
@@ -32,11 +63,23 @@
             "Nombre": "Romina",
             "Edad": "20",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["todfsfke1","toke2","toke3"]
+            },
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "ps4": [
+                        "Airt1",
+                        "Airt2"
+                    ]
+                },
+                {
+                    "ps5": [
+                        "AIRT1",
+                        "AIRT2"
+                    ]
                 }
+            ]
             
         }
     },
@@ -45,12 +88,23 @@
             "Nombre": "Martha",
             "Edad": "30",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            },
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "ps4": [
+                        "Airt1",
+                        "Airt2"
+                    ]
+                },
+                {
+                    "ps5": [
+                        "AIRT1",
+                        "AIRT2"
+                    ]
                 }
-            
+            ]
         }
     },
     {
@@ -58,11 +112,23 @@
             "Nombre": "Ana",
             "Edad": "26",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            },
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "ps4": [
+                        "Airt1",
+                        "Airt2"
+                    ]
+                },
+                {
+                    "ps5": [
+                        "AIRT1",
+                        "AIRT2"
+                    ]
                 }
+            ]
         }
     },
     {
@@ -70,11 +136,23 @@
             "Nombre": "Mathilda",
             "Edad": "21",
             "Sexo": "Femenino",
-            "Consolas": 
+            "Juegos": { 
+                "Grupo":  ["toke1","toke2","toke3"]
+            },
+            "Consolas": [
                 {
-                    "PS4": [ "resident evil", "horizon zero down"],
-                    "PS5": [ "Fobia", "MK12"]
+                    "ps4": [
+                        "Airt1",
+                        "Airt2"
+                    ]
+                },
+                {
+                    "ps5": [
+                        "AIRT1",
+                        "AIRT2"
+                    ]
                 }
+            ]
         }
     }
 ]

@@ -12,7 +12,9 @@ export class SelectComponent extends Component{
         this.state = {
             SelectComponentInfo: null,
             selectValue: '',
+            selectValueTwo: '',
             nodeInitialState: 0,
+            nodeInitialStateTwo:0,
         }
 
     }
@@ -39,9 +41,17 @@ export class SelectComponent extends Component{
         });
     }
 
+    loadSelectResultsTwo = (e)=>{
+        this.setState({
+            selectValueTwo: e.target.value,
+            nodeInitialStateTwo: e.target.value,
+        });
+    }
+
     render(){
 
-        // console.log(this.state.selectValue);
+        //  console.log(this.state.selectValue + ' este es el uno');
+        //  console.log(this.state.selectValueTwo + ' este es el dos');
         
         const SelectComponentInfoLoaded = this.state.SelectComponentInfo;
 
@@ -62,12 +72,30 @@ export class SelectComponent extends Component{
                 <select>
                        
                     {
-                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[`${this.state.nodeInitialState}`].Datos.Consolas.PS4.map((obj,i)=>(
+                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[`${this.state.nodeInitialState}`].Datos.Juegos.Grupo.map((obj,i)=>(
                             <option key={i}>{obj}</option> 
                         ))
                         : ''
                     }
                         
+                </select>
+
+                <select value={this.state.selectValueTwo} onChange={this.loadSelectResultsTwo}>
+                    {
+                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[0].Datos.TipoConsola.map((obj,i)=>(
+                            <option value={i} key={i}>{obj}</option> 
+                        ))
+                        : ''
+                    }
+                </select>
+
+                <select>
+                    {
+                        SelectComponentInfoLoaded ? SelectComponentInfoLoaded[0].Datos.Consolas[`${this.state.nodeInitialStateTwo}`].consola.map((obj,i)=>(
+                            <option key={i}>{obj}</option> 
+                        ))
+                        : ''
+                    }
                 </select>
 
             </div>

@@ -1,20 +1,16 @@
 
 import React, {Component} from 'react';
 
-
-
-
-
 export class FlowBoxStructure extends Component{
 
     constructor(props){
         super(props);
 
         this.state = {
-            titleData: this.props.title,
-            ContentData: this.props.content,
+            titleData:     this.props.title,
+            ContentData:   this.props.content,
             ContentClass:  this.props.classType,
-            itemNumber: this.props.itemNumberIndex,
+            itemNumber:    this.props.itemNumberIndex,
         }
 
         // console.log(this.state.itemNumber);

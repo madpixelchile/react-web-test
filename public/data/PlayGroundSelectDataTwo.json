@@ -1,0 +1,27 @@
+
+
+[
+    {
+        "Users": [
+            {
+                "User": 
+                    {
+                        "Name": "Juan",
+                        "Age": "34",
+                        "Country": "Chile",
+                        "Skills": ["Music","Design","Code"]
+                    }
+            },
+            {
+                "User": 
+                    {
+                        "Name": "Bairon",
+                        "Age": "38",
+                        "Country": "Chile",
+                        "Skills": ["Kitchen","Cars","Sports"]
+                    }
+                
+            }
+        ]
+    }
+]

@@ -7,9 +7,11 @@ import {FlowBoxComponent} from './FlowBoxComponent/';
 
 import {SelectComponent} from './SelectComponent/SelectComponent';
 
-import {LoadWithFetchComponent} from './loadWithFetch/loadWithFetch';
+// import {LoadWithFetchComponent} from './loadWithFetch/loadWithFetch';
 
-import {LoadWithFetchTwo} from './loadWIthFetchTwo/';
+// import {LoadWithFetchTwo} from './loadWIthFetchTwo/';
+
+import {SelectComponentTwo} from './SelectComponent/SelectComponentTwo';
 
 
 export class PagePlaygroundComponent extends Component{
@@ -33,10 +35,13 @@ export class PagePlaygroundComponent extends Component{
 
                     <SelectComponent />
 
-                    <LoadWithFetchComponent/>
+                    {/* <LoadWithFetchComponent/> */}
 
 
-                    <LoadWithFetchTwo />
+                    {/* <LoadWithFetchTwo /> */}
+
+
+                    <SelectComponentTwo/>
 
                 </div>
 
