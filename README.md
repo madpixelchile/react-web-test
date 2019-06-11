@@ -132,3 +132,15 @@ Documentation:
 https://www.npmjs.com/package/react-onclickoutside
 
 `react-onclickoutside`
+
+### React Flexbox Grid
+
+If you work with external grid, use React Flexbox Grid. Here: https://roylee0704.github.io/react-flexbox-grid/
+
+`npm i react-flexbox-grid`
+
+### Validate Prop Types
+
+If we need validate props from JSX elements add this module. Here: https://www.npmjs.com/package/prop-types 
+
+`npm i prop-types`
